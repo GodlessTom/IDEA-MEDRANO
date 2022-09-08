@@ -1,0 +1,931 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* esto se conoce como reset, pongo de manera defecto, sin medida ni margenes el aspecto que nos da chrome */
+
+@font-face {
+    font-family: "Leatherwork";
+    src: url(../assets/fonts/leatherwork/Leatherwork-Regular.ttf);
+}
+
+/* para importar una fuente descargada en la carpeta assets se usa @font-face */
+
+body {
+    font-family: 'Leatherwork';
+
+    width: 100vw;
+    height: 100vh;
+    /* estas medidas de body son medidas relativas para que la vista se ajuste a mi pantalla propia */
+    /* background-image: url(../assets/images/COCONO.bmp); */
+    background-color: black;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "header header header header"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+/* acá sobre imagenes y colores del fondo */
+
+/* DE ACÁ EN ADELANTE HEADER */
+header {
+    display: grid;
+    grid-area: header;
+    margin-bottom: 10px;
+    border-right: 10px solid black;
+    border-left: 10px solid black;
+    border-top: 10px solid black;
+    border-bottom: 10px solid black;
+    height: 13vh;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* NOTA MENTAL: EL TOP 0 SIRVE PARA MOVER EL HEADER COMPLETO, PUEDO PONER BOTTOM 0 EN EL FOOTER */
+    background-color: brown;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "headerLeft headerRight";
+
+}
+
+header nav div h1 {
+    display: flex;
+    padding-top: 3px;
+    color: black;
+    width: 60%;
+    font-size: 23px;
+    border: 5px solid black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex-wrap: wrap;
+
+}
+
+header nav div ul li {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 3px;
+    display: inline-block;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+
+
+nav div a {
+    font-size: 25px;
+    text-decoration: none;
+    color: black
+}
+
+
+.headerLeft {
+    grid-area: headerLeft;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.headerRight {
+    grid-area: headerRight;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* DE ACÁ EN ADELANTE MAIN */
+
+/* saqué los acentos de las palabras porque la fuente me las dejaba con un aspecto feo */
+main {
+    display: grid;
+    grid-area: main;
+    right: 0;
+    left: 0;
+    border-right: 10px solid black;
+    border-left: 10px solid black;
+    padding-top: 50px;
+    width: 100vw;
+    height: 120vh;
+    background-image: url(../assets/images/FondoGaucho.jpg);
+    background-size: cover;
+}
+
+/* DE ACÁ EN ADELANTE VA EL MAIN DEL INDEX */
+
+#mainIndex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "mainIndexTitle mainIndexTitle mainIndexTitle"
+        " mainIndexSubtitle mainIndexSubtitle mainIndexSubtitle"
+        "mainIndexCenter mainIndexCenter mainIndexCenter";
+    height: 100vh;
+}
+
+.mainIndexTitle {
+    grid-area: mainIndexTitle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20%;
+}
+
+.mainIndexTitle h2 {
+    text-align: center;
+}
+
+.mainIndexSubtitle {
+    grid-area: mainIndexSubtitle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15%;
+}
+
+
+
+
+.mainIndexSubtitle div h3 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#mainIndexImage {
+    border: 5px solid black;
+    border-radius: 3px;
+    background-color: black;
+
+}
+
+.mainIndexCenter {
+    grid-area: mainIndexCenter;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+
+#textBelowImage {
+    border: 5px solid black;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: brown;
+}
+
+
+
+
+/* DE ACÁ EN ADELANTE EL MAIN DE "GALERIA" */
+
+
+
+#mainGallery {
+    height: 260vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: ". galleryTitle galleryTitle ."
+        ". imgRow1-1 imgRow1-2 ."
+        ". imgRow2-1 imgRow2-2 ."
+        ". videosTitle videosTitle ."
+        ". videosRow1-1 videosRow1-2 .";
+    justify-content: center;
+
+}
+
+#mainGallery h1 {
+    border: 5px solid black;
+    background-color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.galleryTitle {
+    grid-area: galleryTitle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    flex-shrink: 120px;
+    margin-bottom: 20px;
+}
+
+/* ACÁ PONER ANIMACIONES PARA QUE LAS IMAGENES X-1 VENGAN DESDE LA IZQUIERDA, Y LAS IMAGENES X-2 VENGAN DESDE LA DERECHA */
+.imgRow1-1 {
+    grid-area: imgRow1-1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.imgRow1-2 {
+    grid-area: imgRow1-2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.imgRow1-1 img {
+    background-color: black;
+    border: 3px solid black;
+}
+
+.imgRow1-2 img {
+    background-color: black;
+    border: 3px solid black;
+}
+
+.imgRow2-1 {
+    grid-area: imgRow2-1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}
+
+.imgRow2-2 {
+    grid-area: imgRow2-2;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.imgRow2-1 img {
+    background-color: black;
+    border: 3px solid black;
+}
+
+.imgRow2-2 img {
+    background-color: black;
+    border: 3px solid black;
+}
+
+.videosTitle {
+    grid-area: videosTitle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.videosTitle h2 {
+    border: 5px solid black;
+    background-color: white;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.videosRow1-1 {
+    grid-area: videosRow1-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.videosRow1-1 iframe {
+    background-color: black;
+    border: 3px solid black;
+}
+
+.videosRow1-2 {
+    grid-area: videosRow1-2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.videosRow1-2 iframe {
+    background-color: black;
+    border: 3px solid black;
+}
+
+
+
+
+/* DE ACÁ EN ADELANTE EL MAIN DE "CLIENTES" */
+
+#mainClients {
+    height: 140vh;
+}
+
+#mainClients div h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+
+#faqList {
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+
+#faqList h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#faqList h3 a {
+    border: 2px solid black;
+
+    color: red
+}
+
+#faqList ol p {
+    border: 1px dotted black;
+    background-color: white;
+    margin: 2px 300px 2px 300px;
+
+}
+
+#faqList ol li {
+    border: 1px solid black;
+    background-color: brown;
+    margin: 2px 250px 2px 250px;
+}
+
+#clientsComments1 {
+    text-align: center;
+}
+
+#clientsComments1 img {
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+#clientsComments2 {
+    text-align: center;
+}
+
+#clientsComments2 img {
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+#pricesTable {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+/* DE ACÁ EN ADELANTE EL MAIN DE "NOSOTROS" */
+
+#mainWe {
+    text-align: center;
+    width: 100vw;
+    height: 145vh;
+}
+
+#mainWe div img {
+    background-color: black;
+    border: 3px solid black;
+
+}
+
+#mainWeBelowImg1 {
+    border: 2px solid black;
+    background-color: brown;
+    width: 600px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#mainWeBelowImg2 {
+    border: 2px solid black;
+    background-color: brown;
+    width: 900px;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* DE ACÁ EN ADELANTE EL MAIN DE CONTACTOS */
+
+#mainContact {
+    height: 80vh;
+}
+
+#mainContact div {
+
+    font-size: larger;
+    text-align: center;
+    margin: auto;
+
+}
+
+#mainContact div form {
+    margin-left: 130px;
+    margin-right: 130px;
+
+}
+
+#mainContact div form fieldset legend {
+    font-weight: 1000;
+
+}
+
+#mainContact div form fieldset {
+    border: 5px solid black;
+}
+
+#formData1 {
+    padding-top: 15px;
+}
+
+#formData2 {
+    padding-top: 15px;
+}
+
+#formData3 {
+    padding-top: 15px;
+}
+
+#formData4 {
+    padding-top: 15px;
+}
+
+#formData5 {
+    padding-top: 15px;
+}
+
+
+/* DE ACÁ EN ADELANTE FOOTER */
+
+footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footerLeft footerMiddle footerRight";
+
+
+    border: 10px solid black;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: relative;
+    width: 100vw;
+    height: 13vh;
+    background-color: brown;
+}
+
+.footerLeft {
+    grid-area: footerLeft;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 10px;
+}
+
+.footerMiddle {
+    grid-area: footerMiddle;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.footerRight {
+    grid-area: footerRight;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 10px;
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .headerLeft h1 {
+        font-size: 18px;
+
+    }
+
+    .headerRight ul li a {
+        font-size: 20px;
+
+    }
+
+
+    /* MAIN DE GALLERY */
+
+
+
+    .imgRow1-1 img {
+        flex-wrap: wrap;
+        max-width: 480px;
+        max-height: 480px;
+
+    }
+
+    .imgRow1-2 img {
+        flex-wrap: wrap;
+        max-width: 480px;
+        max-height: 480px;
+    }
+
+    .imgRow2-1 img {
+        flex-wrap: wrap;
+        max-width: 480px;
+        max-height: 480px;
+
+    }
+
+    .imgRow2-2 img {
+        flex-wrap: wrap;
+        max-width: 480px;
+        max-height: 480px;
+
+    }
+
+    .videosRow1-1 iframe {
+        display: flex;
+        justify-content: center;
+        width: 95%;
+
+    }
+
+    .videosRow1-2 iframe {
+        display: flex;
+        justify-content: center;
+        width: 95%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
+
+    #mainGallery {
+
+        grid-template-columns: 0.5fr 370px 370px 0.5fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: ". galleryTitle galleryTitle ."
+            ". imgRow1-1 imgRow1-2 ."
+            ". imgRow2-1 imgRow2-2 ."
+            ". videosTitle videosTitle ."
+            ". videosRow1-1 videosRow1-2 .";
+    }
+
+    .imgRow1-1 img {
+        max-width: 370px;
+        max-height: 370px;
+
+    }
+
+    .imgRow1-2 img {
+        max-width: 370px;
+        max-height: 370px;
+    }
+
+    .imgRow2-1 img {
+        max-width: 370px;
+        max-height: 370px;
+
+    }
+
+    .imgRow2-2 img {
+        max-width: 370px;
+        max-height: 370px;
+
+    }
+
+    .videosRow1-1 iframe {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .videosRow1-2 iframe {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .headerLeft h1 {
+        padding-left: 5px;
+        padding-right: 5px;
+        flex-shrink: 10px;
+        font-size: 13px;
+
+    }
+
+    .headerRight {
+        display: flex ;
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 15px;
+    }
+
+    .headerRight ul li a {
+        font-size: 15px;
+    }
+
+    /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
+
+#mainGallery {
+
+    grid-template-columns: 0.5fr 270px 270px 0.5fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: ". galleryTitle galleryTitle ."
+        ". imgRow1-1 imgRow1-2 ."
+        ". imgRow2-1 imgRow2-2 ."
+        ". videosTitle videosTitle ."
+        ". videosRow1-1 videosRow1-2 .";
+}
+
+
+.imgRow1-1 img {
+    max-width: 270px;
+    max-height: 270px;
+
+}
+
+.imgRow1-2 img {
+    max-width: 270px;
+    max-height: 270px;
+}
+
+.imgRow2-1 img {
+    max-width: 270px;
+    max-height: 270px;
+
+}
+
+.imgRow2-2 img {
+    max-width: 270px;
+    max-height: 270px;
+
+}
+
+
+}
+
+@media only screen and (max-width: 580px) {
+
+
+    #mainGallery {
+
+        grid-template-columns: 0.5fr 230px 230px 0.5fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: ". galleryTitle galleryTitle ."
+            ". imgRow1-1 imgRow1-2 ."
+            ". imgRow2-1 imgRow2-2 ."
+            ". videosTitle videosTitle ."
+            ". videosRow1-1 videosRow1-2 .";
+    }
+    
+    
+    .imgRow1-1 img {
+        max-width: 230px;
+        max-height: 230px;
+    
+    }
+    
+    .imgRow1-2 img {
+        max-width: 230px;
+        max-height: 230px;
+    }
+    
+    .imgRow2-1 img {
+        max-width: 230px;
+        max-height: 230px;
+    
+    }
+    
+    .imgRow2-2 img {
+        max-width: 230px;
+        max-height: 230px;
+    
+    }
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    .headerLeft h1 {
+        font-size: 12px;
+        width: 80%;
+
+    }
+
+    .headerRight {
+        width: 100%;
+        padding-right: 10px;
+        padding-left: 15px;
+    }
+
+    .headerRight ul li a {
+        font-size: 15px;
+    }
+
+    /* ACÁ CORREGÍ EL MAIN DEL INDEX */
+
+    #mainIndex {
+        height: 150vh;
+    }
+
+
+    /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
+
+    #mainGallery {
+
+        grid-template-columns: 0.5fr 200px 200px 0.5fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: ". galleryTitle galleryTitle ."
+            ". imgRow1-1 imgRow1-2 ."
+            ". imgRow2-1 imgRow2-2 ."
+            ". videosTitle videosTitle ."
+            ". videosRow1-1 videosRow1-2 .";
+    }
+    
+    
+    .imgRow1-1 img {
+        max-width: 200px;
+        max-height: 200px;
+    
+    }
+    
+    .imgRow1-2 img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    
+    .imgRow2-1 img {
+        max-width: 200px;
+        max-height: 200px;
+    
+    }
+    
+    .imgRow2-2 img {
+        max-width: 200px;
+        max-height: 200px;
+    
+    }
+
+
+
+
+
+
+
+    .footerLeft {
+        height: 10vh;
+    }
+
+    .footerMiddle {
+        height: 10vh;
+    }
+
+    .footerRight {
+        height: 10vh;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+
+
+    header nav {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "headerLeft headerRight";
+    }
+
+    .headerLeft h1 {
+        font-size: 10px;
+    }
+
+    .headerRight ul li a{
+        font-size: 13px;
+
+
+    }
+
+}@media only screen and (max-width: 430px)  {
+
+    .footerMiddle {
+        font-size: 12px;
+    }
+
+    .headerRight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
+    #mainGallery {
+        height: 400vh;
+        grid-template-columns: 0.2fr 280px 0.2fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: ". galleryTitle ."
+            ". imgRow1-1 ."
+            ". imgRow1-2 ."
+            ". imgRow2-1 ."
+            ". imgRow2-2 ."
+            ". videosTitle ."
+            ". videosRow1-1 ."
+            ". videosRow1-2 .";
+    }
+
+    #mainGallery div img {
+        /* justify-content: center;
+        align-items: center;
+        text-align: center; */
+        max-width: 280px;
+        max-height: 280px;
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 341px) {
+    
+    .headerRight ul li a {
+    font-size: 10px;}
+
+}
+
+
+
+
+@media only screen and (max-width: 320px) {
+
+    .headerLeft h1{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+
+
+
+
+
+
+
+    .footerMiddle {
+        font-size: 10px;
+    }
+
+}
