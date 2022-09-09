@@ -337,8 +337,24 @@ main {
 /* DE ACÁ EN ADELANTE EL MAIN DE "CLIENTES" */
 
 #mainClients {
-    height: 140vh;
+    height: 180vh;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "clientsRow1 clientsRow1 clientsRow1"
+                        "clientsRow2 clientsRow2 clientsRow2"
+                        "clientsRow3 clientsRow3 clientsRow3"
+                        "clientsRow4 clientsRow4 clientsRow4"
+                        "clientsRow5 clientsRow5 clientsRow5"
+                        "clientsRow6 clientsRow6 clientsRow6"
+                        "clientsRow7 clientsRow7 clientsRow7"
+                        "clientsRow8 clientsRow8 clientsRow8";
 }
+
+.clientsRow1 {
+    grid-area: clientsRow1;
+}
+
 
 #mainClients div h1 {
     text-align: center;
@@ -348,6 +364,7 @@ main {
 }
 
 #faqList {
+    grid-area: clientsRow2;
     font-size: medium;
     font-weight: bold;
     text-align: center;
@@ -367,17 +384,22 @@ main {
 #faqList ol p {
     border: 1px dotted black;
     background-color: white;
-    margin: 2px 300px 2px 300px;
+    margin: 2px 4rem 2px 4rem;
 
 }
 
 #faqList ol li {
     border: 1px solid black;
     background-color: brown;
-    margin: 2px 250px 2px 250px;
+    margin: 2px 2rem 2px 2rem;
+}
+
+.clientsRow3 {
+    grid-area: clientsRow3;
 }
 
 #clientsComments1 {
+    grid-area: clientsRow4;
     text-align: center;
 }
 
@@ -387,12 +409,31 @@ main {
 }
 
 #clientsComments2 {
+    grid-area: clientsRow5;
     text-align: center;
 }
 
 #clientsComments2 img {
     border: 2px solid black;
     background-color: rgb(255, 255, 255);
+}
+
+#clientsComments3 {
+    grid-area: clientsRow6;
+    text-align: center;
+}
+
+#clientsComments3 img {
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+.clientsRow7 {
+    grid-area: clientsRow7;
+}
+
+.clientsRow8 {
+    grid-area: clientsRow8;
 }
 
 #pricesTable {
@@ -651,6 +692,24 @@ footer {
         justify-content: center;
     }
 
+
+    /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
+
+#mainClients {
+    height: 220vh;
+    display: grid;
+    grid-template-columns: 0.5fr 360px 0.5fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "clientsRow1 clientsRow1 clientsRow1"
+                        "clientsRow2 clientsRow2 clientsRow2"
+                        "clientsRow3 clientsRow3 clientsRow3"
+                        "clientsRow4 clientsRow4 clientsRow4"
+                        "clientsRow5 clientsRow5 clientsRow5"
+                        "clientsRow6 clientsRow6 clientsRow6"
+                        "clientsRow7 clientsRow7 clientsRow7"
+                        "clientsRow8 clientsRow8 clientsRow8";
+}
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -713,10 +772,34 @@ footer {
 }
 
 
+/* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
+
+#mainClients {
+    height: 290vh;
+}
+
+#faqList ol li {
+    margin: 0px 2rem 0px 2rem;
+}
+
+#faqList ol p{
+    margin: 0px 4rem 0px 4rem;
+}
+
+#mainClients div img {
+    width: 25rem;
+}
+
+#mainClients div table {
+    max-width: 25rem;
+}
+
+
 }
 
 @media only screen and (max-width: 580px) {
 
+    /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
 
     #mainGallery {
 
@@ -751,6 +834,30 @@ footer {
         max-width: 230px;
         max-height: 230px;
     
+    }
+
+
+    /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
+
+    #mainClients {
+        height: 290vh;
+    }
+
+    #mainClients div img {
+        max-width: 400px;
+    }
+    
+    #mainClients div table {
+        max-width: 400px;
+        margin-bottom: 10px;
+    }
+
+    #faqList ol li {
+        margin: 0px 2rem 0px 2rem;
+    }
+    
+    #faqList ol p{
+        margin: 0px 4rem 0px 4rem;
     }
 
 
@@ -828,6 +935,13 @@ footer {
     }
 
 
+    /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
+
+    #mainClients {
+        height: 300vh;
+    }
+
+
 
 
 
@@ -864,6 +978,13 @@ footer {
         font-size: 13px;
 
 
+    }
+
+
+    /* DE ACÁ EN ADELANTE MAIN DE CLIENTES */
+
+    #mainClients {
+        height: 330vh;
     }
 
 }@media only screen and (max-width: 430px)  {
@@ -904,12 +1025,55 @@ footer {
     }
 
     #mainGallery div img {
-        /* justify-content: center;
-        align-items: center;
-        text-align: center; */
         max-width: 280px;
         max-height: 280px;
     }
+
+
+    /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
+
+    #mainClients {
+        display: grid;
+        grid-template-columns: 0.5fr 280px 0.5fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: ". clientsRow1 ."
+                            ". clientsRow2 ."
+                            ". clientsRow3 ."
+                            ". clientsRow4 ."
+                            ". clientsRow5 ."
+                            ". clientsRow6 ."
+                            ". clientsRow7 ."
+                            "clientsRow8 clientsRow8 clientsRow8"; 
+    }
+
+
+    #faqList ol li {
+        margin: 0px 2.5rem 0px 2.5rem;
+    }
+    
+    #faqList ol p{
+        margin: 0px 4rem 0px 4rem;
+    }
+
+    #mainClients div img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    
+    #mainClients div table {
+        font-size: 13px;
+        width: 15rem;
+        margin-bottom: 10px;
+    }
+
+    #mainClients div h1 {
+        font-size: 25px;
+    }
+
+
+
+
+
 
 }
 
@@ -920,6 +1084,7 @@ footer {
 
 @media only screen and (max-width: 341px) {
 
+    /* DE ACÁ EN ADELANTE EL MAIN DEL INDEX */
 
     #mainIndex {
         display: grid;
@@ -940,6 +1105,44 @@ footer {
     
     .headerRight ul li a {
     font-size: 10px;}
+
+
+    /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
+
+
+    #mainClients {
+        display: grid;
+        grid-template-columns: 0.5fr 280px 0.5fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: ". clientsRow1 ."
+                            ". clientsRow2 ."
+                            ". clientsRow3 ."
+                            ". clientsRow4 ."
+                            ". clientsRow5 ."
+                            ". clientsRow6 ."
+                            ". clientsRow7 ."
+                            "clientsRow8 clientsRow8 clientsRow8";
+    
+
+    }
+
+    #mainClients div h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+
+
+#mainClients div img {
+    max-height: 400px;
+    max-width: 15rem;
+}
+
+#mainClients div table {
+    width: 10px;
+    font-size: 10px;
+}
 
 }
 
