@@ -1056,13 +1056,14 @@ footer {
     }
 
     #mainClients div img {
-        max-width: 300px;
-        max-height: 300px;
+        max-width: 280px;
+        max-height: 280px;
+        margin: auto;
     }
     
     #mainClients div table {
-        font-size: 13px;
-        width: 15rem;
+        font-size: 12px;
+        width: 50px;
         margin-bottom: 10px;
     }
 
@@ -1141,7 +1142,7 @@ footer {
 
 #mainClients div table {
     width: 10px;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 }
