@@ -953,12 +953,17 @@ footer {
         margin-right: 5px;
     }
 
+    /* ACÁ ARREGLO MAIN DE INDEX */
 
     #mainIndex {
         height: 150vh ;
     }
 
+    /* ACÁ ARREGLO MAIN DE GALLERY */
 
+    #mainGallery {
+        height: 430vh;
+    }
 
 
 
