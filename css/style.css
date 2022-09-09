@@ -136,7 +136,8 @@ main {
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "mainIndexTitle mainIndexTitle mainIndexTitle"
         " mainIndexSubtitle mainIndexSubtitle mainIndexSubtitle"
-        "mainIndexCenter mainIndexCenter mainIndexCenter";
+        "mainIndexCenter mainIndexCenter mainIndexCenter"
+        "textBelowImage textBelowImage textBelowImage";
     height: 100vh;
 }
 
@@ -184,10 +185,12 @@ main {
 }
 
 
-#textBelowImage {
+.textBelowImage {
+    grid-area: textBelowImage;
     border: 5px solid black;
     margin-left: 100px;
     margin-right: 100px;
+    margin-bottom: 100px;
     background-color: brown;
 }
 
@@ -758,6 +761,8 @@ footer {
 
 
 @media only screen and (max-width: 480px) {
+
+
     .headerLeft h1 {
         font-size: 12px;
         width: 80%;
@@ -778,6 +783,10 @@ footer {
 
     #mainIndex {
         height: 150vh;
+    }
+
+    .textBelowImage {
+        margin: 0 50px 50px 50px;
     }
 
 
@@ -859,9 +868,7 @@ footer {
 
 }@media only screen and (max-width: 430px)  {
 
-    .footerMiddle {
-        font-size: 12px;
-    }
+
 
     .headerRight {
         display: flex;
@@ -869,6 +876,17 @@ footer {
         align-items: center;
     }
     
+    /* ACÁ ARREGLO MAIN INDEX */
+
+    #mainIndexImage {
+        max-width: 280px;
+    }
+
+
+
+    .footerMiddle {
+        font-size: 12px;
+    }
 
     /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
     #mainGallery {
@@ -901,6 +919,24 @@ footer {
 
 
 @media only screen and (max-width: 341px) {
+
+
+    #mainIndex {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "mainIndexTitle mainIndexTitle mainIndexTitle"
+                            " mainIndexSubtitle mainIndexSubtitle mainIndexSubtitle"
+                            "mainIndexCenter mainIndexCenter mainIndexCenter"
+                            "textBelowImage textBelowImage textBelowImage";
+    height: 140vh;
+
+    }
+
+    .textBelowImage {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
     
     .headerRight ul li a {
     font-size: 10px;}
