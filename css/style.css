@@ -483,22 +483,24 @@ main {
 /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTOS */
 
 #mainContact {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: ". mainContactForm .";
     height: 80vh;
+}
+
+.mainContactForm {
+    grid-area: mainContactForm;
 }
 
 #mainContact div {
 
     font-size: larger;
     text-align: center;
-    margin: auto;
 
 }
 
-#mainContact div form {
-    margin-left: 130px;
-    margin-right: 130px;
-
-}
 
 #mainContact div form fieldset legend {
     font-weight: 1000;
@@ -716,6 +718,15 @@ footer {
                         "clientsRow7 clientsRow7 clientsRow7"
                         "clientsRow8 clientsRow8 clientsRow8";
 }
+
+
+/* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
+
+    #mainContact {grid-template-columns:  1fr ;
+        grid-template-areas: "mainContactForm";
+    }
+
+
 
 }
 
@@ -1080,6 +1091,12 @@ footer {
 
 
 
+    /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
+
+    .formTitle {
+        font-size: 15px;
+    }
+
 
 
 
@@ -1151,6 +1168,14 @@ footer {
     width: 10px;
     font-size: 12px;
 }
+
+/* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
+
+.formTitle {
+    font-size: 8px;
+}
+
+
 
 }
 
