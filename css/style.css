@@ -932,17 +932,16 @@ footer {
 
     #mainWe div img{
         margin-top: 10px;
-        width: 85%;
+        width: 300px;
         height: 80%;
     }
 
     #mainWeBelowImg1 {
-        width:100% ;
-        height: 100%;
+        width:300px;
     }
 
     #mainWeBelowImg2 {
-        width: 100%;
+        width: 300px;
     }
 
 
@@ -1242,6 +1241,20 @@ footer {
 
 .formTitle {
     font-size: 14px;
+}
+
+#mainWe div img{
+    margin-top: 10px;
+    width: 270px;
+    height: 80%;
+}
+
+#mainWeBelowImg1 {
+    width:270px;
+}
+
+#mainWeBelowImg2 {
+    width: 270px;
 }
 
 
