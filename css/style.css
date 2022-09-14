@@ -43,7 +43,7 @@ header {
     border-bottom: 10px solid black;
     height: 13vh;
     width: 100vw;
-    position: sticky;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -72,6 +72,15 @@ header nav div h1 {
     background-color: white;
     flex-wrap: wrap;
 
+}
+
+header nav div ul li:hover {
+    background-color: yellow;
+}
+
+header nav div ul li a:hover {
+    color: red;
+    
 }
 
 header nav div ul li {
@@ -117,6 +126,7 @@ nav div a {
 main {
     display: grid;
     grid-area: main;
+    margin-top: 80px;
     right: 0;
     left: 0;
     border-right: 10px solid black;

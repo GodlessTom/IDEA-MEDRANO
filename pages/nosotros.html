@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/images/Bandera_de_la_Provincia_de_Entre_Ríos.svg.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>REGIONALES "EL NEGRO"</title>
 </head>
 
@@ -33,12 +34,12 @@
 
     <main id="mainWe">
 
-        <div class="weRow1">
+        <div class="weRow1" data-aos="fade-right">
             <img src="../assets/images/para el main.jpeg" alt="nosotros tomando mates en la playa del Thompson"
                 height="400px" width="600px">
         </div>
 
-        <div id="mainWeBelowImg1">
+        <div id="mainWeBelowImg1" data-aos="fade-left">
 
             <h3>
                 Somos una empresa familiar
@@ -51,12 +52,12 @@
 
         </div>
 
-        <div class="weRow3">
+        <div class="weRow3" data-aos="fade-right">
 
             <img src="../assets/images/comprandocuchillos.jpg" alt="camioneta embarrada" height="400px" width="900px">
 
         </div>
-        <div id="mainWeBelowImg2">
+        <div id="mainWeBelowImg2" data-aos="fade-left">
 
             <h3>No tenemos intermediarios.</h3>
 
@@ -88,8 +89,11 @@
 
 
 
-
-
+        <!-- ACÁ VA EL SCRIPT DEL AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 
 
     </main>

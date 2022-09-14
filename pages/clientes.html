@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="../assets/images/Bandera_de_la_Provincia_de_Entre_Ríos.svg.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>REGIONALES "EL NEGRO"</title>
 </head>
 
@@ -33,54 +35,58 @@
 
     <main id="mainClients">
 
-        <div class="clientsRow1">
-            <h1 id="arriba" >
+        <div class="clientsRow1" data-aos="zoom-in">
+            <h1 id="arriba">
                 PREGUNTAS FRECUENTES
             </h1>
         </div>
 
         <div id="faqList">
             <ol type="I">
-                <li>¿Los productos son totalmente artesanales?.</li>
-                <p>Si, son totalmente artesanales, fabricados por manos entrerrianas.</p>
-                <li>¿El precio incluye el embalaje?.</li>
-                <p>Si, dentro del precio total se incluye el embalaje.</p>
-                <li>¿Venden a traves de otro sitio?.</li>
-                <p>No, actualmente solo vendemos a través de nuestro contacto por whatsapp.</p>
-                <li>Los encontre en mercadolibre, ¿puede ser?.</li>
-                <p>No, las unicas redes que tenemos son las del pie de pagina.</p>
-                <li>¿Se pueden retirar los pedidos por el local? </li>
-                <p>Si, se pueden retirar con cita previa a traves de whatsapp. </p>
+                <li data-aos="fade-right">¿Los productos son totalmente artesanales?.</li>
+                <p data-aos="fade-left">Si, son totalmente artesanales, fabricados por manos entrerrianas.</p>
+                <li data-aos="fade-right">¿El precio incluye el embalaje?.</li>
+                <p data-aos="fade-left">Si, dentro del precio total se incluye el embalaje.</p>
+                <li data-aos="fade-right">¿Venden a traves de otro sitio?.</li>
+                <p data-aos="fade-left">No, actualmente solo vendemos a través de nuestro contacto por whatsapp.</p>
+                <li data-aos="fade-right">Los encontre en mercadolibre, ¿puede ser?.</li>
+                <p data-aos="fade-left">No, las unicas redes que tenemos son las del pie de pagina.</p>
+                <li data-aos="fade-right">¿Se pueden retirar los pedidos por el local? </li>
+                <p data-aos="fade-left">Si, se pueden retirar con cita previa a traves de whatsapp. </p>
             </ol>
 
             <h3>Si tenes alguna pregunta especifica la podes hacer en <a href="./contacto.html#opiniones">contacto</a></h3>
 
         </div>
 
-        <div class="clientsRow3">
-            <h1>
+        <div class="clientsRow3" data-aos="zoom-in">
+            <h1 >
                 VALORACIONES
             </h1>
         </div>
 
 
-        <div id="clientsComments1" class="clientsRow4"> 
-            <img src="../assets/images/clientes-removebg-preview.png" alt="cliente1" height="200px" width="600px">
+        <div id="clientsComments1" class="clientsRow4" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"> 
+            <img src="../assets/images/clientes-removebg-preview.png" alt="cliente1" height="200px" width="600px" class="animate_animated animate_fadeInUp">
         </div>
 
-        <div id="clientsComments2" class="clientsRow5"> 
+        <div id="clientsComments2" class="clientsRow5" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"> 
             <img src="../assets/images/clientes2-removebg-preview.png" alt="cliente2" height="200px" width="600px">
         </div>
 
-        <div id="clientsComments3" class="clientsRow6">
+        <div id="clientsComments3" class="clientsRow6" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom" >
             <img src="../assets/images/clientes3-removebg-preview.png" alt="cliente3" height="200px" width="600px">
         </div>
 
-        <div class="clientsRow7">
+        <div class="clientsRow7" data-aos="zoom-in">
             <h1>PRECIOS DE ENVIO</h1>
         </div>
 
-        <div class="clientsRow8">
+        <div class="clientsRow8" data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom">
             <table border="5px" width="600px" id="pricesTable">
 
                 <tr>
@@ -110,6 +116,11 @@
 
 
 
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 
 
 
