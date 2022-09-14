@@ -43,7 +43,7 @@ header {
     border-bottom: 10px solid black;
     height: 13vh;
     width: 100vw;
-    position: sticky;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -121,6 +121,7 @@ nav div a {
 main {
     display: grid;
     grid-area: main;
+    margin-top: 80px;
     right: 0;
     left: 0;
     border-right: 10px solid black;
