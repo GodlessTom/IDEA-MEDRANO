@@ -74,8 +74,13 @@ header nav div h1 {
 
 }
 
+header nav div ul li:hover {
+    background-color: yellow;
+}
+
 header nav div ul li a:hover {
     color: red;
+    
 }
 
 header nav div ul li {
