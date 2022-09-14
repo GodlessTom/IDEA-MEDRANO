@@ -448,9 +448,24 @@ main {
 /* DE ACÁ EN ADELANTE EL MAIN DE "NOSOTROS" */
 
 #mainWe {
+    display: grid;
+    grid-template-columns:0.5fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "weRow1 weRow1 weRow1"
+                        "weRow2 weRow2 weRow2"
+                        "weRow3 weRow3 weRow3"
+                        "weRow4 weRow4 weRow4";
     text-align: center;
     width: 100vw;
     height: 145vh;
+}
+
+.weRow1 {
+    grid-area: weRow1;
+}
+
+.weRow3 {
+    grid-area: weRow3;
 }
 
 #mainWe div img {
@@ -460,6 +475,7 @@ main {
 }
 
 #mainWeBelowImg1 {
+    grid-area: weRow2;
     border: 2px solid black;
     background-color: brown;
     width: 600px;
@@ -470,6 +486,7 @@ main {
 }
 
 #mainWeBelowImg2 {
+    grid-area: weRow4;
     border: 2px solid black;
     background-color: brown;
     width: 900px;
@@ -720,6 +737,32 @@ footer {
 }
 
 
+/* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
+
+#mainWe {
+    grid-template-areas: "weRow1 weRow1 weRow1"
+                        ". weRow2 ."
+                        "weRow3 weRow3 weRow3"
+                        ". weRow4 .";
+    height: 160vh;
+}
+
+#mainWe div img {
+    width: 300px;
+}
+
+#mainWeBelowImg1 {
+    margin: auto;
+    width: 80%;
+
+}
+
+#mainWeBelowImg2 {
+    margin: auto;
+    width: 80%;
+}
+
+
 /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
 
     #mainContact {grid-template-columns:  1fr ;
@@ -812,6 +855,12 @@ footer {
     max-width: 25rem;
 }
 
+/* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
+
+#mainWe {
+    height: 180vh;
+}
+
 
 }
 
@@ -877,6 +926,26 @@ footer {
     #faqList ol p{
         margin: 0px 4rem 0px 4rem;
     }
+
+
+    /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
+
+    #mainWe div img{
+        margin-top: 10px;
+        width: 85%;
+        height: 80%;
+    }
+
+    #mainWeBelowImg1 {
+        width:100% ;
+        height: 100%;
+    }
+
+    #mainWeBelowImg2 {
+        width: 100%;
+    }
+
+
 
 
 }
