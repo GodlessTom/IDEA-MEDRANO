@@ -14,8 +14,8 @@
 /* para importar una fuente descargada en la carpeta assets se usa @font-face */
 
 body {
-    font-family: 'Leatherwork';
-
+    font-family: 'Leatherwork' !important;
+    /* APLIQUÉ IMPORTANT PARA CAMBIAR LA FUENTE */
     width: 100vw;
     height: 100vh;
     /* estas medidas de body son medidas relativas para que la vista se ajuste a mi pantalla propia */
