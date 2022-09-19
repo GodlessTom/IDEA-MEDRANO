@@ -151,6 +151,7 @@ main {
     height: 100vh;
 }
 
+
 .mainIndexTitle {
     grid-area: mainIndexTitle;
     display: flex;
@@ -193,6 +194,46 @@ main {
     text-align: center;
     margin-bottom: 10%;
 }
+
+.mainIndexImage {
+    animation-name: visibleFlag;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    
+}
+
+@keyframes visibleFlag {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.mainIndexImage {
+    animation-name: rotateFlag;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+@keyframes rotateFlag {
+    0% {
+        rotate: -10deg;
+    }
+
+    50% {
+        rotate: 0deg;
+    }
+    
+
+    100%{
+        rotate: 10deg;
+    }
+}
+
 
 
 .textBelowImage {
@@ -252,6 +293,18 @@ main {
     justify-content: right;
     align-items: center;
     margin-bottom: 80px;
+    transition: 2s ease;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -ms-transition: 2s ease;
+    -o-transition: 2s ease;
+}
+.imgRow1-1:hover {
+    transform: scale(1.1) translatex(-50px);
+    -webkit-transform: scale(1.1) translatex(-50px);
+    -moz-transform: scale(1.1) translatex(-50px);
+    -ms-transform: scale(1.1) translatex(-50px);
+    -o-transform: scale(1.1) translatex(-50px);
 }
 
 .imgRow1-2 {
@@ -260,6 +313,19 @@ main {
     justify-content: left;
     align-items: center;
     margin-bottom: 80px;
+    scale: 1;
+    transition: 2s ease;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -ms-transition: 2s ease;
+    -o-transition: 2s ease;
+}
+.imgRow1-2:hover {
+    transform: scale(1.1) translatex(50px);
+    -webkit-transform: scale(1.1) translatex(50px);
+    -moz-transform: scale(1.1) translatex(50px);
+    -ms-transform: scale(1.1) translatex(50px);
+    -o-transform: scale(1.1) translatex(50px);
 }
 
 .imgRow1-1 img {
@@ -277,7 +343,20 @@ main {
     display: flex;
     justify-content: right;
     align-items: center;
+    transition: 2s ease;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -ms-transition: 2s ease;
+    -o-transition: 2s ease;
 
+}
+
+.imgRow2-1:hover {
+    transform: scale(1.1) translatex(-50px);
+    -webkit-transform: scale(1.1) translatex(-50px);
+    -moz-transform: scale(1.1) translatex(-50px);
+    -ms-transform: scale(1.1) translatex(-50px);
+    -o-transform: scale(1.1) translatex(-50px);
 }
 
 .imgRow2-2 {
@@ -285,7 +364,18 @@ main {
     display: flex;
     justify-content: left;
     align-items: center;
-
+    transition: 2s ease;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -ms-transition: 2s ease;
+    -o-transition: 2s ease;
+}
+.imgRow2-2:hover {
+    transform: scale(1.1) translatex(50px);
+    -webkit-transform: scale(1.1) translatex(50px);
+    -moz-transform: scale(1.1) translatex(50px);
+    -ms-transform: scale(1.1) translatex(50px);
+    -o-transform: scale(1.1) translatex(50px);
 }
 
 .imgRow2-1 img {
