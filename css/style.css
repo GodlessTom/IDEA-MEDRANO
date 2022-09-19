@@ -195,22 +195,7 @@ main {
     margin-bottom: 10%;
 }
 
-.mainIndexImage {
-    animation-name: visibleFlag;
-    animation-duration: 2s;
-    animation-iteration-count: initial;
-    
-}
 
-@keyframes visibleFlag {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
 .mainIndexImage {
     animation-name: rotateFlag;
     animation-duration: 5s;
