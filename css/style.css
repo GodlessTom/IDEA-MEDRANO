@@ -606,6 +606,10 @@ footer {
     height: 10vh !important;
 }
 
+#footerGallery {
+    top: 270vh;
+}
+
 .footerLeft {
     /* grid-area: footerLeft; */
     position: relative;
