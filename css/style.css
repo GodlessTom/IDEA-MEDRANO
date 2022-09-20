@@ -34,14 +34,14 @@ body {
 
 /* DE ACÁ EN ADELANTE HEADER */
 header {
-    display: grid;
-    grid-area: header;
+    /* display: grid;
+    grid-area: header; */
     margin-bottom: 10px;
     border-right: 10px solid black;
     border-left: 10px solid black;
     border-top: 10px solid black;
     border-bottom: 10px solid black;
-    height: 13vh;
+    height: 13vh !important;
     width: 100vw !important;
     position: absolute;
     top: 0;
@@ -51,19 +51,12 @@ header {
     background-color: brown;
 }
 
-header nav {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: "headerLeft headerRight";
 
-}
-
-header nav div h1 {
+.headerLeft h1 {
     display: flex;
     padding-top: 3px;
     color: black;
-    width: 50% !important;
+    width: 60% !important;
     font-size: 23px;
     border: 5px solid black;
     text-align: center;
@@ -75,12 +68,12 @@ header nav div h1 {
 
 }
 
-header nav div ul li:hover {
-    background-color: yellow;
+.navbar-nav li a:hover {
+    background-color: yellow !important;
 }
 
 
-header nav div ul li {
+.headerRight ul li {
     background-color: white;
     border: 3px solid black;
     border-radius: 3px;
@@ -101,18 +94,21 @@ nav div a {
 
 
 .headerLeft {
-    grid-area: headerLeft;
+    /* grid-area: headerLeft; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-
+    
 }
 
+.headerLeft h1{
+    position: absolute;
+    width: 40% !important;
+}
 
 .headerRight {
-    grid-area: headerRight;
+    /* grid-area: headerRight; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -813,6 +809,8 @@ footer {
 
 }
 
+
+
 @media only screen and (max-width: 768px) {
 
 
@@ -824,7 +822,7 @@ footer {
 
     }
 
-    .headerRight {
+    /* .headerRight {
         display: flex ;
         width: 100%;
         padding-right: 10px;
@@ -833,7 +831,7 @@ footer {
 
     .headerRight ul li a {
         font-size: 15px;
-    }
+    } */
 
     /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
 
