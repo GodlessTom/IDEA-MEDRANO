@@ -396,6 +396,19 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    transition: 2s ease;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -ms-transition: 2s ease;
+    -o-transition: 2s ease;
+}
+
+.videosRow1-1:hover {
+    transform: scale(1.1) translatex(-50px);
+    -webkit-transform: scale(1.1) translatex(-50px);
+    -moz-transform: scale(1.1) translatex(-50px);
+    -ms-transform: scale(1.1) translatex(-50px);
+    -o-transform: scale(1.1) translatex(-50px);
 }
 
 .videosRow1-1 iframe {
@@ -409,6 +422,19 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    transition: 2s ease;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -ms-transition: 2s ease;
+    -o-transition: 2s ease;
+}
+
+.videosRow1-2:hover {
+    transform: scale(1.1) translatex(50px);
+    -webkit-transform: scale(1.1) translatex(50px);
+    -moz-transform: scale(1.1) translatex(50px);
+    -ms-transform: scale(1.1) translatex(50px);
+    -o-transform: scale(1.1) translatex(50px);
 }
 
 .videosRow1-2 iframe {
