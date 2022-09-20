@@ -99,10 +99,10 @@ nav div a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.headerLeft h1{
+.headerLeft h1 {
     position: absolute;
     width: 40% !important;
 }
@@ -145,7 +145,7 @@ main {
         "textBelowImage textBelowImage textBelowImage"; */
     height: 110vh !important;
     margin-bottom: 100px !important;
-} 
+}
 
 /* .mainIndexTitle {
     grid-area: mainIndexTitle;
@@ -184,7 +184,7 @@ main {
     background-color: black;
     width: 400px !important;
     height: 200px !important;
-} 
+}
 
 .mainIndexImage {
     animation-name: rotateFlag;
@@ -192,7 +192,7 @@ main {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 
-} 
+}
 
 @keyframes rotateFlag {
     0% {
@@ -204,10 +204,10 @@ main {
     }
 
 
-    100%{
+    100% {
         rotate: 10deg;
     }
-} 
+}
 
 /* .mainIndexCenter {
     grid-area: mainIndexCenter;
@@ -371,13 +371,13 @@ main {
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: "clientsRow1 clientsRow1 clientsRow1"
-                        "clientsRow2 clientsRow2 clientsRow2"
-                        "clientsRow3 clientsRow3 clientsRow3"
-                        "clientsRow4 clientsRow4 clientsRow4"
-                        "clientsRow5 clientsRow5 clientsRow5"
-                        "clientsRow6 clientsRow6 clientsRow6"
-                        "clientsRow7 clientsRow7 clientsRow7"
-                        "clientsRow8 clientsRow8 clientsRow8";
+        "clientsRow2 clientsRow2 clientsRow2"
+        "clientsRow3 clientsRow3 clientsRow3"
+        "clientsRow4 clientsRow4 clientsRow4"
+        "clientsRow5 clientsRow5 clientsRow5"
+        "clientsRow6 clientsRow6 clientsRow6"
+        "clientsRow7 clientsRow7 clientsRow7"
+        "clientsRow8 clientsRow8 clientsRow8";
 }
 
 .clientsRow1 {
@@ -478,12 +478,12 @@ main {
 
 #mainWe {
     display: grid;
-    grid-template-columns:0.5fr 1fr 0.5fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "weRow1 weRow1 weRow1"
-                        "weRow2 weRow2 weRow2"
-                        "weRow3 weRow3 weRow3"
-                        "weRow4 weRow4 weRow4";
+        "weRow2 weRow2 weRow2"
+        "weRow3 weRow3 weRow3"
+        "weRow4 weRow4 weRow4";
     text-align: center;
     width: 100vw;
     height: 145vh;
@@ -531,7 +531,7 @@ main {
 #mainContact {
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr;
     grid-template-areas: ". mainContactForm .";
     height: 80vh;
 }
@@ -707,6 +707,7 @@ footer {
 }
 
 @media only screen and (max-width: 1024px) {
+
     /* AJUSTES DEL HEADER PARA BOOTSTRAP */
     #headerSize {
         height: 8vh !important;
@@ -768,51 +769,52 @@ footer {
 
     /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
 
-#mainClients {
-    height: 220vh;
-    display: grid;
-    grid-template-columns: 0.5fr 360px 0.5fr;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-areas: "clientsRow1 clientsRow1 clientsRow1"
-                        "clientsRow2 clientsRow2 clientsRow2"
-                        "clientsRow3 clientsRow3 clientsRow3"
-                        "clientsRow4 clientsRow4 clientsRow4"
-                        "clientsRow5 clientsRow5 clientsRow5"
-                        "clientsRow6 clientsRow6 clientsRow6"
-                        "clientsRow7 clientsRow7 clientsRow7"
-                        "clientsRow8 clientsRow8 clientsRow8";
-}
+    #mainClients {
+        height: 220vh;
+        display: grid;
+        grid-template-columns: 0.5fr 360px 0.5fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: "clientsRow1 clientsRow1 clientsRow1"
+            "clientsRow2 clientsRow2 clientsRow2"
+            "clientsRow3 clientsRow3 clientsRow3"
+            "clientsRow4 clientsRow4 clientsRow4"
+            "clientsRow5 clientsRow5 clientsRow5"
+            "clientsRow6 clientsRow6 clientsRow6"
+            "clientsRow7 clientsRow7 clientsRow7"
+            "clientsRow8 clientsRow8 clientsRow8";
+    }
 
 
-/* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
+    /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
 
-#mainWe {
-    grid-template-areas: "weRow1 weRow1 weRow1"
-                        ". weRow2 ."
-                        "weRow3 weRow3 weRow3"
-                        ". weRow4 .";
-    height: 160vh;
-}
+    #mainWe {
+        grid-template-areas: "weRow1 weRow1 weRow1"
+            ". weRow2 ."
+            "weRow3 weRow3 weRow3"
+            ". weRow4 .";
+        height: 160vh;
+    }
 
-#mainWe div img {
-    width: 300px;
-}
+    #mainWe div img {
+        width: 300px;
+    }
 
-#mainWeBelowImg1 {
-    margin: auto;
-    width: 80%;
+    #mainWeBelowImg1 {
+        margin: auto;
+        width: 80%;
 
-}
+    }
 
-#mainWeBelowImg2 {
-    margin: auto;
-    width: 80%;
-}
+    #mainWeBelowImg2 {
+        margin: auto;
+        width: 80%;
+    }
 
 
-/* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
+    /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
 
-    #mainContact {grid-template-columns:  1fr ;
+    #mainContact {
+        grid-template-columns: 1fr;
         grid-template-areas: "mainContactForm";
     }
 
@@ -852,7 +854,7 @@ footer {
 
     /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
 
-/* #mainGallery {
+    /* #mainGallery {
 
     grid-template-columns: 0.5fr 270px 270px 0.5fr;
     grid-template-rows: repeat(5, 1fr);
@@ -864,57 +866,57 @@ footer {
 } */
 
 
-.imgRow1-1 img {
-    max-width: 270px;
-    max-height: 270px;
+    .imgRow1-1 img {
+        max-width: 270px;
+        max-height: 270px;
 
-}
+    }
 
-.imgRow1-2 img {
-    max-width: 270px;
-    max-height: 270px;
-}
+    .imgRow1-2 img {
+        max-width: 270px;
+        max-height: 270px;
+    }
 
-.imgRow2-1 img {
-    max-width: 270px;
-    max-height: 270px;
+    .imgRow2-1 img {
+        max-width: 270px;
+        max-height: 270px;
 
-}
+    }
 
-.imgRow2-2 img {
-    max-width: 270px;
-    max-height: 270px;
+    .imgRow2-2 img {
+        max-width: 270px;
+        max-height: 270px;
 
-}
+    }
 
 
-/* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
+    /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
 
-#mainClients {
-    height: 290vh;
-}
+    #mainClients {
+        height: 290vh;
+    }
 
-#faqList ol li {
-    margin: 0px 2rem 0px 2rem;
-}
+    #faqList ol li {
+        margin: 0px 2rem 0px 2rem;
+    }
 
-#faqList ol p{
-    margin: 0px 4rem 0px 4rem;
-}
+    #faqList ol p {
+        margin: 0px 4rem 0px 4rem;
+    }
 
-#mainClients div img {
-    width: 25rem;
-}
+    #mainClients div img {
+        width: 25rem;
+    }
 
-#mainClients div table {
-    max-width: 25rem;
-}
+    #mainClients div table {
+        max-width: 25rem;
+    }
 
-/* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
+    /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
 
-#mainWe {
-    height: 180vh;
-}
+    #mainWe {
+        height: 180vh;
+    }
 
 
 }
@@ -944,29 +946,29 @@ footer {
             ". videosTitle videosTitle ."
             ". videosRow1-1 videosRow1-2 .";
     } */
-    
-    
+
+
     .imgRow1-1 img {
         max-width: 230px;
         max-height: 230px;
-    
+
     }
-    
+
     .imgRow1-2 img {
         max-width: 230px;
         max-height: 230px;
     }
-    
+
     .imgRow2-1 img {
         max-width: 230px;
         max-height: 230px;
-    
+
     }
-    
+
     .imgRow2-2 img {
         max-width: 230px;
         max-height: 230px;
-    
+
     }
 
 
@@ -979,7 +981,7 @@ footer {
     #mainClients div img {
         max-width: 400px;
     }
-    
+
     #mainClients div table {
         max-width: 400px;
         margin-bottom: 10px;
@@ -988,22 +990,22 @@ footer {
     #faqList ol li {
         margin: 0px 2rem 0px 2rem;
     }
-    
-    #faqList ol p{
+
+    #faqList ol p {
         margin: 0px 4rem 0px 4rem;
     }
 
 
     /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
 
-    #mainWe div img{
+    #mainWe div img {
         margin-top: 10px;
         width: 300px;
         height: 80%;
     }
 
     #mainWeBelowImg1 {
-        width:300px;
+        width: 300px;
     }
 
     #mainWeBelowImg2 {
@@ -1017,8 +1019,4 @@ footer {
 
 
 
-                    /* ELIMINO TODOS LOS MEDIA QUERY DE ACÁ EN ADELANTE, NO SON PERTINENTES */
-
-
-
-
+/* ELIMINO TODOS LOS MEDIA QUERY DE ACÁ EN ADELANTE, NO SON PERTINENTES */
