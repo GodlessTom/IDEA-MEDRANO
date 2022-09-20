@@ -42,7 +42,7 @@ header {
     border-top: 10px solid black;
     border-bottom: 10px solid black;
     height: 13vh;
-    width: 100vw;
+    width: 100vw !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -63,7 +63,7 @@ header nav div h1 {
     display: flex;
     padding-top: 3px;
     color: black;
-    width: 60%;
+    width: 50% !important;
     font-size: 23px;
     border: 5px solid black;
     text-align: center;
@@ -72,16 +72,13 @@ header nav div h1 {
     background-color: white;
     flex-wrap: wrap;
 
+
 }
 
 header nav div ul li:hover {
     background-color: yellow;
 }
 
-header nav div ul li a:hover {
-    color: red;
-    
-}
 
 header nav div ul li {
     background-color: white;
@@ -92,7 +89,9 @@ header nav div ul li {
     text-align: center;
 }
 
-
+/* .navbar {
+    style
+} */
 
 nav div a {
     font-size: 25px;
@@ -111,13 +110,13 @@ nav div a {
 
 }
 
+
 .headerRight {
     grid-area: headerRight;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
 
 /* DE ACÁ EN ADELANTE MAIN */
