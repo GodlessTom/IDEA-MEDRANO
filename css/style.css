@@ -140,52 +140,54 @@ main {
 /* DE ACÁ EN ADELANTE VA EL MAIN DEL INDEX */
 
 #mainIndex {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: "mainIndexTitle mainIndexTitle mainIndexTitle"
         " mainIndexSubtitle mainIndexSubtitle mainIndexSubtitle"
         "mainIndexCenter mainIndexCenter mainIndexCenter"
-        "textBelowImage textBelowImage textBelowImage";
-    height: 100vh;
-}
+        "textBelowImage textBelowImage textBelowImage"; */
+    height: 100vh !important;
+} 
 
-.mainIndexTitle {
+/* .mainIndexTitle {
     grid-area: mainIndexTitle;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 20%;
-}
+}  */
 
-.mainIndexTitle h2 {
+/* .mainIndexTitle h2 {
     text-align: center;
-}
+} */
 
-.mainIndexSubtitle {
+/* .mainIndexSubtitle {
     grid-area: mainIndexSubtitle;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 15%;
-}
+}  */
 
 
 
 
-.mainIndexSubtitle div h3 {
+/* .mainIndexSubtitle div h3 {
     margin-top: 50px;
     text-align: center;
-}
+} */
 
 #mainIndexImage {
+    margin: auto;
     border: 5px solid black;
     border-radius: 3px;
     background-color: black;
-
-}
+    width: 400px !important;
+    height: 200px !important;
+} 
 
 .mainIndexImage {
     animation-name: rotateFlag;
@@ -193,7 +195,7 @@ main {
     animation-iteration-count: infinite;
     animation-direction: alternate;
 
-}
+} 
 
 @keyframes rotateFlag {
     0% {
@@ -208,21 +210,19 @@ main {
     100%{
         rotate: 10deg;
     }
-}
+} 
 
-.mainIndexCenter {
+/* .mainIndexCenter {
     grid-area: mainIndexCenter;
     text-align: center;
     margin-bottom: 10%;
-}
+}   */
 
 
 .textBelowImage {
-    grid-area: textBelowImage;
+    /* grid-area: textBelowImage; */
     border: 5px solid black;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 100px;
+    margin: auto;
     background-color: brown;
 }
 
