@@ -216,6 +216,31 @@ main {
 }   */
 
 
+.mainIndexImage {
+    animation-name: rotateFlag;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+@keyframes rotateFlag {
+    0% {
+        rotate: -10deg;
+    }
+
+    50% {
+        rotate: 0deg;
+    }
+    
+
+    100%{
+        rotate: 10deg;
+    }
+}
+
+
+
 .textBelowImage {
     /* grid-area: textBelowImage; */
     border: 5px solid black;
@@ -271,6 +296,18 @@ main {
     justify-content: right;
     align-items: center;
     margin-bottom: 80px;
+    transition: 2s ease;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -ms-transition: 2s ease;
+    -o-transition: 2s ease;
+}
+.imgRow1-1:hover {
+    transform: scale(1.1) translatex(-50px);
+    -webkit-transform: scale(1.1) translatex(-50px);
+    -moz-transform: scale(1.1) translatex(-50px);
+    -ms-transform: scale(1.1) translatex(-50px);
+    -o-transform: scale(1.1) translatex(-50px);
 }
 
 .imgRow1-2 {
@@ -279,6 +316,19 @@ main {
     justify-content: left;
     align-items: center;
     margin-bottom: 80px;
+    scale: 1;
+    transition: 2s ease;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -ms-transition: 2s ease;
+    -o-transition: 2s ease;
+}
+.imgRow1-2:hover {
+    transform: scale(1.1) translatex(50px);
+    -webkit-transform: scale(1.1) translatex(50px);
+    -moz-transform: scale(1.1) translatex(50px);
+    -ms-transform: scale(1.1) translatex(50px);
+    -o-transform: scale(1.1) translatex(50px);
 }
 
 .imgRow1-1 img {
@@ -296,7 +346,20 @@ main {
     display: flex;
     justify-content: right;
     align-items: center;
+    transition: 2s ease;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -ms-transition: 2s ease;
+    -o-transition: 2s ease;
 
+}
+
+.imgRow2-1:hover {
+    transform: scale(1.1) translatex(-50px);
+    -webkit-transform: scale(1.1) translatex(-50px);
+    -moz-transform: scale(1.1) translatex(-50px);
+    -ms-transform: scale(1.1) translatex(-50px);
+    -o-transform: scale(1.1) translatex(-50px);
 }
 
 .imgRow2-2 {
@@ -304,7 +367,18 @@ main {
     display: flex;
     justify-content: left;
     align-items: center;
-
+    transition: 2s ease;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -ms-transition: 2s ease;
+    -o-transition: 2s ease;
+}
+.imgRow2-2:hover {
+    transform: scale(1.1) translatex(50px);
+    -webkit-transform: scale(1.1) translatex(50px);
+    -moz-transform: scale(1.1) translatex(50px);
+    -ms-transform: scale(1.1) translatex(50px);
+    -o-transform: scale(1.1) translatex(50px);
 }
 
 .imgRow2-1 img {
@@ -340,6 +414,19 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    transition: 2s ease;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -ms-transition: 2s ease;
+    -o-transition: 2s ease;
+}
+
+.videosRow1-1:hover {
+    transform: scale(1.1) translatex(-50px);
+    -webkit-transform: scale(1.1) translatex(-50px);
+    -moz-transform: scale(1.1) translatex(-50px);
+    -ms-transform: scale(1.1) translatex(-50px);
+    -o-transform: scale(1.1) translatex(-50px);
 }
 
 .videosRow1-1 iframe {
@@ -353,6 +440,19 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
+    transition: 2s ease;
+    -webkit-transition: 2s ease;
+    -moz-transition: 2s ease;
+    -ms-transition: 2s ease;
+    -o-transition: 2s ease;
+}
+
+.videosRow1-2:hover {
+    transform: scale(1.1) translatex(50px);
+    -webkit-transform: scale(1.1) translatex(50px);
+    -moz-transform: scale(1.1) translatex(50px);
+    -ms-transform: scale(1.1) translatex(50px);
+    -o-transform: scale(1.1) translatex(50px);
 }
 
 .videosRow1-2 iframe {
