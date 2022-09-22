@@ -127,7 +127,9 @@ header div h1 {
     display: none;
   }
   .headerRight i {
-    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
   
 
@@ -194,6 +196,7 @@ main {
 }
 
 #mainIndexImage {
+    z-index: -1;
     border: 5px solid black;
     border-radius: 3px;
     background-color: black;
@@ -212,20 +215,20 @@ main {
     animation-duration: 5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    
+    z-index: -1;
 }
 
 @keyframes rotateFlag {
-    0% {
+    0% {z-index: -1;
         rotate: -10deg;
     }
 
-    50% {
+    50% {z-index: -1;
         rotate: 0deg;
     }
     
 
-    100%{
+    100%{z-index: -1;
         rotate: 10deg;
     }
 }
@@ -896,8 +899,134 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+/* ACÁ MENÚ HAMBURGUESA DEL HEADER */
 
 
+header div h1 {
+    display: flex;
+    padding-top: 3px;
+    color: black;
+    width: 60%;
+    font-size: 23px;
+    border: 5px solid black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex-wrap: wrap;
+
+}
+
+.menu ul li:hover {
+    background-color: yellow;
+}
+
+.menu ul li a:hover {
+    color: red;
+    
+}
+
+.menu ul li {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 3px;
+    margin-right: 10px;
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+    z-index: 1;
+}
+
+
+
+.menu ul li a {
+    display: block;
+    max-width: 200px;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black
+}
+
+
+.headerLeft {
+    grid-area: headerLeft;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.headerRight {
+    grid-area: headerRight;
+    display: block;
+    /* flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+
+}
+
+
+.headerRight input[type="checkbox"], .headerRight .fa-bars, .headerRight .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin-top: 8px;
+    margin-right: 20px;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+  }
+  
+  .headerRight .fa-bars, .headerRight .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+  }
+  
+  .headerRight input[type="checkbox"] {
+    opacity: 0;
+  }
+  
+  .headerRight {
+    /* color: white; */
+    position: relative;
+    /* background: #123456; */
+    min-height: 48px;
+  }
+  
+  .headerRight nav {
+    display: none;
+  }
+  
+  .headerRight input:checked ~ nav {
+    display: block !important;
+  }
+  
+  .headerRight input:checked ~ .fa-bars {
+    display: none;
+  }
+  
+  .headerRight input:not(:checked) ~ .fa-times {
+    display: none;
+  }
+
+
+  .headerRight input[type="checkbox"] {
+    display:block;
+    height: 48px;
+    width: 48px;
+  }
+  .headerRight i {
+    opacity: 1;
+    height: 48px !important;
+    width: 48px !important;
+}
+
+
+/* TERMINA */
     .headerLeft h1 {
         padding-left: 5px;
         padding-right: 5px;
@@ -987,6 +1116,11 @@ footer {
 }
 
 @media only screen and (max-width: 580px) {
+
+
+
+
+
 
     #mainIndex {
         height: 110vh;
