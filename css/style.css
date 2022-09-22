@@ -51,7 +51,7 @@ header {
     background-color: brown;
 }
 
-header nav {
+header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -59,7 +59,7 @@ header nav {
 
 }
 
-header nav div h1 {
+header div h1 {
     display: flex;
     padding-top: 3px;
     color: black;
@@ -74,16 +74,16 @@ header nav div h1 {
 
 }
 
-header nav div ul li:hover {
+.menu ul li:hover {
     background-color: yellow;
 }
 
-header nav div ul li a:hover {
+.menu ul li a:hover {
     color: red;
     
 }
 
-header nav div ul li {
+.menu ul li {
     background-color: white;
     border: 3px solid black;
     border-radius: 3px;
@@ -94,7 +94,9 @@ header nav div ul li {
 
 
 
-nav div a {
+.menu ul li a {
+    display: block;
+    max-width: 200px;
     font-size: 25px;
     text-decoration: none;
     color: black
@@ -119,6 +121,15 @@ nav div a {
     align-items: center;
 
 }
+
+
+  .headerRight input[type="checkbox"] {
+    display: none;
+  }
+  .headerRight i {
+    display: none;
+}
+  
 
 /* DE ACÁ EN ADELANTE MAIN */
 
