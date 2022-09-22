@@ -988,6 +988,10 @@ footer {
 
 @media only screen and (max-width: 580px) {
 
+    #mainIndex {
+        height: 110vh;
+    }
+
     /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
 
     #mainGallery {
@@ -1171,7 +1175,7 @@ footer {
 @media only screen and (max-width: 470px) {
 
 
-    header nav {
+    header {
         display: grid;
         grid-template-columns: 0.5fr 1fr;
         grid-template-rows: 1fr;
@@ -1208,7 +1212,7 @@ footer {
     /* ACÁ ARREGLO MAIN INDEX */
 
     #mainIndexImage {
-        max-width: 280px;
+        max-width: 280px !important;
     }
 
 
