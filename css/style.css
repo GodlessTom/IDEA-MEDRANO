@@ -780,32 +780,16 @@ footer {
 
 
 
-    .imgRow1-1 img {
-        flex-wrap: wrap;
-        max-width: 480px;
-        max-height: 480px;
-
+    .slider {
+        width: 900px;
     }
 
-    .imgRow1-2 img {
-        flex-wrap: wrap;
-        max-width: 480px;
-        max-height: 480px;
+    .wrapper img {
+        height: 500px;
+        width: 900px;
     }
 
-    .imgRow2-1 img {
-        flex-wrap: wrap;
-        max-width: 480px;
-        max-height: 480px;
-
-    }
-
-    .imgRow2-2 img {
-        flex-wrap: wrap;
-        max-width: 480px;
-        max-height: 480px;
-
-    }
+    
 
     .videosRow1-1 iframe {
         display: flex;
@@ -1083,35 +1067,13 @@ header div h1 {
     grid-template-columns: 0.5fr 270px 270px 0.5fr;
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: ". galleryTitle galleryTitle ."
-        ". imgRow1-1 imgRow1-2 ."
-        ". imgRow2-1 imgRow2-2 ."
+        "imageSlider imageSlider imageSlider imageSlider"
+        "imageSlider imageSlider imageSlider imageSlider" 
         ". videosTitle videosTitle ."
         ". videosRow1-1 videosRow1-2 .";
 }
 
 
-.imgRow1-1 img {
-    max-width: 270px;
-    max-height: 270px;
-
-}
-
-.imgRow1-2 img {
-    max-width: 270px;
-    max-height: 270px;
-}
-
-.imgRow2-1 img {
-    max-width: 270px;
-    max-height: 270px;
-
-}
-
-.imgRow2-2 img {
-    max-width: 270px;
-    max-height: 270px;
-
-}
 
 
 /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
