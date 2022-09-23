@@ -14,8 +14,8 @@
 /* para importar una fuente descargada en la carpeta assets se usa @font-face */
 
 body {
-    font-family: 'Leatherwork';
-
+    font-family: 'Leatherwork' !important;
+    /* APLIQUÉ IMPORTANT PARA CAMBIAR LA FUENTE */
     width: 100vw;
     height: 100vh;
     /* estas medidas de body son medidas relativas para que la vista se ajuste a mi pantalla propia */
@@ -41,8 +41,8 @@ header {
     border-left: 10px solid black;
     border-top: 10px solid black;
     border-bottom: 10px solid black;
-    height: 13vh;
-    width: 100vw;
+    height: 15vh !important;
+    width: 100vw !important;
     position: absolute;
     top: 0;
     left: 0;
@@ -63,7 +63,7 @@ header div h1 {
     display: flex;
     padding-top: 3px;
     color: black;
-    width: 60%;
+    width: 60% !important;
     font-size: 23px;
     border: 5px solid black;
     text-align: center;
@@ -110,7 +110,11 @@ header div h1 {
     justify-content: center;
     align-items: center;
 
+}
 
+.headerLeft h1 {
+    position: absolute;
+    width: 40% !important;
 }
 
 .headerRight {
@@ -121,6 +125,12 @@ header div h1 {
     align-items: center;
 
 }
+  .headerRight i {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
 
 
   .headerRight input[type="checkbox"] {
@@ -202,6 +212,27 @@ main {
     border-radius: 3px;
     background-color: black;
 
+.mainIndexImage {
+    animation-name: rotateFlag;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes rotateFlag {
+    0% {
+        rotate: -10deg;
+    }
+
+    50% {
+        rotate: 0deg;
+    }
+
+
+    100% {
+        rotate: 10deg;
+    }
 }
 
 .mainIndexCenter {
@@ -239,9 +270,7 @@ main {
 .textBelowImage {
     grid-area: textBelowImage;
     border: 5px solid black;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 100px;
+    margin: auto;
     background-color: brown;
 }
 
@@ -469,13 +498,13 @@ main {
     grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: "clientsRow1 clientsRow1 clientsRow1"
-                        "clientsRow2 clientsRow2 clientsRow2"
-                        "clientsRow3 clientsRow3 clientsRow3"
-                        "clientsRow4 clientsRow4 clientsRow4"
-                        "clientsRow5 clientsRow5 clientsRow5"
-                        "clientsRow6 clientsRow6 clientsRow6"
-                        "clientsRow7 clientsRow7 clientsRow7"
-                        "clientsRow8 clientsRow8 clientsRow8";
+        "clientsRow2 clientsRow2 clientsRow2"
+        "clientsRow3 clientsRow3 clientsRow3"
+        "clientsRow4 clientsRow4 clientsRow4"
+        "clientsRow5 clientsRow5 clientsRow5"
+        "clientsRow6 clientsRow6 clientsRow6"
+        "clientsRow7 clientsRow7 clientsRow7"
+        "clientsRow8 clientsRow8 clientsRow8";
 }
 
 .clientsRow1 {
@@ -576,12 +605,12 @@ main {
 
 #mainWe {
     display: grid;
-    grid-template-columns:0.5fr 1fr 0.5fr;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "weRow1 weRow1 weRow1"
-                        "weRow2 weRow2 weRow2"
-                        "weRow3 weRow3 weRow3"
-                        "weRow4 weRow4 weRow4";
+        "weRow2 weRow2 weRow2"
+        "weRow3 weRow3 weRow3"
+        "weRow4 weRow4 weRow4";
     text-align: center;
     width: 100vw;
     height: 145vh;
@@ -629,7 +658,7 @@ main {
 #mainContact {
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
-    grid-template-rows: 1fr ;
+    grid-template-rows: 1fr;
     grid-template-areas: ". mainContactForm .";
     height: 80vh;
 }
@@ -696,6 +725,14 @@ footer {
     background-color: brown;
 }
 
+#footer {
+    height: 10vh !important;
+}
+
+#footerGallery {
+    top: 270vh;
+}
+
 .footerLeft {
     grid-area: footerLeft;
     position: relative;
@@ -711,7 +748,6 @@ footer {
     position: relative;
     display: flex;
     justify-content: space-around;
-
     align-items: center;
     flex-wrap: wrap;
 
@@ -794,6 +830,17 @@ footer {
 
 @media only screen and (max-width: 1024px) {
 
+    /* AJUSTES DEL HEADER PARA BOOTSTRAP */
+    #headerSize {
+        height: 8vh !important;
+    }
+
+    .headerLeft h1 {
+        width: 60% !important;
+    }
+
+
+
     /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
 
     #mainGallery {
@@ -837,51 +884,52 @@ footer {
 
     /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
 
-#mainClients {
-    height: 220vh;
-    display: grid;
-    grid-template-columns: 0.5fr 360px 0.5fr;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-areas: "clientsRow1 clientsRow1 clientsRow1"
-                        "clientsRow2 clientsRow2 clientsRow2"
-                        "clientsRow3 clientsRow3 clientsRow3"
-                        "clientsRow4 clientsRow4 clientsRow4"
-                        "clientsRow5 clientsRow5 clientsRow5"
-                        "clientsRow6 clientsRow6 clientsRow6"
-                        "clientsRow7 clientsRow7 clientsRow7"
-                        "clientsRow8 clientsRow8 clientsRow8";
-}
+    #mainClients {
+        height: 220vh;
+        display: grid;
+        grid-template-columns: 0.5fr 360px 0.5fr;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: "clientsRow1 clientsRow1 clientsRow1"
+            "clientsRow2 clientsRow2 clientsRow2"
+            "clientsRow3 clientsRow3 clientsRow3"
+            "clientsRow4 clientsRow4 clientsRow4"
+            "clientsRow5 clientsRow5 clientsRow5"
+            "clientsRow6 clientsRow6 clientsRow6"
+            "clientsRow7 clientsRow7 clientsRow7"
+            "clientsRow8 clientsRow8 clientsRow8";
+    }
 
 
-/* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
+    /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
 
-#mainWe {
-    grid-template-areas: "weRow1 weRow1 weRow1"
-                        ". weRow2 ."
-                        "weRow3 weRow3 weRow3"
-                        ". weRow4 .";
-    height: 160vh;
-}
+    #mainWe {
+        grid-template-areas: "weRow1 weRow1 weRow1"
+            ". weRow2 ."
+            "weRow3 weRow3 weRow3"
+            ". weRow4 .";
+        height: 160vh;
+    }
 
-#mainWe div img {
-    width: 300px;
-}
+    #mainWe div img {
+        width: 300px;
+    }
 
-#mainWeBelowImg1 {
-    margin: auto;
-    width: 80%;
+    #mainWeBelowImg1 {
+        margin: auto;
+        width: 80%;
 
-}
+    }
 
-#mainWeBelowImg2 {
-    margin: auto;
-    width: 80%;
-}
+    #mainWeBelowImg2 {
+        margin: auto;
+        width: 80%;
+    }
 
 
-/* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
+    /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
 
-    #mainContact {grid-template-columns:  1fr ;
+    #mainContact {
+        grid-template-columns: 1fr;
         grid-template-areas: "mainContactForm";
     }
 
@@ -953,9 +1001,9 @@ header div h1 {
 .headerRight {
     grid-area: headerRight;
     display: block;
-    /* flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
 
 }
 
@@ -982,9 +1030,7 @@ header div h1 {
   }
   
   .headerRight {
-    /* color: white; */
     position: relative;
-    /* background: #123456; */
     min-height: 48px;
   }
   
@@ -1037,7 +1083,16 @@ header div h1 {
         font-size: 15px;
     }
 
-    /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
+.menu ul li {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 3px;
+    margin-right: 10px;
+    display: block;
+    flex-wrap: wrap;
+    text-align: center;
+    z-index: 1;
+}
 
 #mainGallery {
 
@@ -1052,6 +1107,10 @@ header div h1 {
 
 
 
+  .headerRight .fa-bars, .headerRight .fa-times {
+    font-size: 48px;
+    pointer-events: none;
+  }
 
 /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
 
@@ -1082,7 +1141,14 @@ header div h1 {
 }
 
 
-}
+/* TERMINA */
+    .headerLeft h1 {
+        padding: 0;
+        margin: 0;
+        left: 50px;
+        font-size: 16px;
+        width: 60% !important;
+    }
 
 @media only screen and (max-width: 580px) {
 
@@ -1130,7 +1196,7 @@ header div h1 {
     #mainClients div img {
         max-width: 400px;
     }
-    
+
     #mainClients div table {
         max-width: 400px;
         margin-bottom: 10px;
@@ -1139,22 +1205,22 @@ header div h1 {
     #faqList ol li {
         margin: 0px 2rem 0px 2rem;
     }
-    
-    #faqList ol p{
+
+    #faqList ol p {
         margin: 0px 4rem 0px 4rem;
     }
 
 
     /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
 
-    #mainWe div img{
+    #mainWe div img {
         margin-top: 10px;
         width: 300px;
         height: 80%;
     }
 
     #mainWeBelowImg1 {
-        width:300px;
+        width: 300px;
     }
 
     #mainWeBelowImg2 {
