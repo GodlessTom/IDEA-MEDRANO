@@ -435,20 +435,8 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
-    transition: 2s ease;
-    -webkit-transition: 2s ease;
-    -moz-transition: 2s ease;
-    -ms-transition: 2s ease;
-    -o-transition: 2s ease;
 }
 
-.videosRow1-1:hover {
-    transform: scale(1.1) translatex(-50px);
-    -webkit-transform: scale(1.1) translatex(-50px);
-    -moz-transform: scale(1.1) translatex(-50px);
-    -ms-transform: scale(1.1) translatex(-50px);
-    -o-transform: scale(1.1) translatex(-50px);
-}
 
 .videosRow1-1 iframe {
     background-color: black;
@@ -461,20 +449,9 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
-    transition: 2s ease;
-    -webkit-transition: 2s ease;
-    -moz-transition: 2s ease;
-    -ms-transition: 2s ease;
-    -o-transition: 2s ease;
 }
 
-.videosRow1-2:hover {
-    transform: scale(1.1) translatex(50px);
-    -webkit-transform: scale(1.1) translatex(50px);
-    -moz-transform: scale(1.1) translatex(50px);
-    -ms-transform: scale(1.1) translatex(50px);
-    -o-transform: scale(1.1) translatex(50px);
-}
+
 
 .videosRow1-2 iframe {
     background-color: black;
@@ -986,7 +963,7 @@ header div h1 {
 .headerRight input[type="checkbox"], .headerRight .fa-bars, .headerRight .fa-times {
     position: absolute;
     box-sizing: border-box;
-    margin-top: 8px;
+    margin-top: 6px;
     margin-right: 20px;
     padding: 0;
     right: 0;
@@ -1195,6 +1172,12 @@ header div h1 {
 
 @media only screen and (max-width: 480px) {
 
+/* MODIFICANDO ESTA LINEA AJUSTO CUANTO SE DESPLAZA EL MENÚ CUANDO ESTÁ ABIERTO */
+    .menu ul li {
+        
+        margin-right: 50px;
+        
+    }
 
     .headerLeft h1 {
         font-size: 12px;
@@ -1394,6 +1377,14 @@ header div h1 {
 
 @media only screen and (max-width: 341px) {
 
+
+    /* HEADER */
+    .menu ul li {
+        
+        margin-right: 60px;
+        
+    }
+
     /* DE ACÁ EN ADELANTE EL MAIN DEL INDEX */
 
     #mainIndex {
@@ -1496,13 +1487,25 @@ header div h1 {
 
     /* ACÁ ARREGLO MAIN DE GALLERY */
 
+    .wrapper img {
+        
+        height: 200px;
+        width: 280px;
+    }
+    .slider {
+        max-width: 280px;
+    }
+    
+
     #mainGallery {
         height: 300vh;
     }
 
+    /* CONTACTOS */
 
 
 
+    /* FOOTER */
 
     .footerMiddle {
         font-size: 10px;
