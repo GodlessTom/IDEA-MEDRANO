@@ -149,6 +149,7 @@ main {
     height: 120vh;
     background-image: url(../assets/images/FondoGaucho.jpg);
     background-size: cover;
+    z-index: -1;
 }
 
 /* DE ACÁ EN ADELANTE VA EL MAIN DEL INDEX */
