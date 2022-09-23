@@ -1125,35 +1125,23 @@ header div h1 {
         grid-template-columns: 0.5fr 230px 230px 0.5fr;
         grid-template-rows: repeat(5, 1fr);
         grid-template-areas: ". galleryTitle galleryTitle ."
-            ". imgRow1-1 imgRow1-2 ."
-            ". imgRow2-1 imgRow2-2 ."
+            "imageSlider imageSlider imageSlider imageSlider"
+            "imageSlider imageSlider imageSlider imageSlider"
             ". videosTitle videosTitle ."
             ". videosRow1-1 videosRow1-2 .";
     }
-    
-    
-    .imgRow1-1 img {
-        max-width: 230px;
-        max-height: 230px;
-    
+
+    .wrapper img {
+        max-width: 400px;
+        height: 300px;
+    }
+
+    .slider {
+        width: 400px;
     }
     
-    .imgRow1-2 img {
-        max-width: 230px;
-        max-height: 230px;
-    }
     
-    .imgRow2-1 img {
-        max-width: 230px;
-        max-height: 230px;
     
-    }
-    
-    .imgRow2-2 img {
-        max-width: 230px;
-        max-height: 230px;
-    
-    }
 
 
     /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
@@ -1242,35 +1230,14 @@ header div h1 {
         grid-template-columns: 0.5fr 200px 200px 0.5fr;
         grid-template-rows: repeat(5, 1fr);
         grid-template-areas: ". galleryTitle galleryTitle ."
-            ". imgRow1-1 imgRow1-2 ."
-            ". imgRow2-1 imgRow2-2 ."
+            "imageSlider imageSlider imageSlider imageSlider"
+            "imageSlider imageSlider imageSlider imageSlider"
             ". videosTitle videosTitle ."
             ". videosRow1-1 videosRow1-2 .";
     }
     
     
-    .imgRow1-1 img {
-        max-width: 200px;
-        max-height: 200px;
     
-    }
-    
-    .imgRow1-2 img {
-        max-width: 200px;
-        max-height: 200px;
-    }
-    
-    .imgRow2-1 img {
-        max-width: 200px;
-        max-height: 200px;
-    
-    }
-    
-    .imgRow2-2 img {
-        max-width: 200px;
-        max-height: 200px;
-    
-    }
 
 
     /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
@@ -1351,12 +1318,10 @@ header div h1 {
     #mainGallery {
         height: 400vh;
         grid-template-columns: 0.2fr 280px 0.2fr;
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-template-areas: ". galleryTitle ."
-            ". imgRow1-1 ."
-            ". imgRow1-2 ."
-            ". imgRow2-1 ."
-            ". imgRow2-2 ."
+            "imageSlider imageSlider imageSlider"
+            "imageSlider imageSlider imageSlider"
             ". videosTitle ."
             ". videosRow1-1 ."
             ". videosRow1-2 .";
@@ -1532,7 +1497,7 @@ header div h1 {
     /* ACÁ ARREGLO MAIN DE GALLERY */
 
     #mainGallery {
-        height: 430vh;
+        height: 300vh;
     }
 
 
