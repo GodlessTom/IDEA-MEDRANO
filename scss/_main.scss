@@ -1,0 +1,107 @@
+main {
+    display: grid;
+    grid-area: main;
+    margin-top: 80px;
+    right: 0;
+    left: 0;
+    border-right: 10px solid black;
+    border-left: 10px solid black;
+    padding-top: 50px;
+    width: 100vw;
+    height: 120vh;
+    background-image: url(../assets/images/FondoGaucho.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+/* DE ACÁ EN ADELANTE VA EL MAIN DEL INDEX */
+
+#mainIndex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "mainIndexTitle mainIndexTitle mainIndexTitle"
+        " mainIndexSubtitle mainIndexSubtitle mainIndexSubtitle"
+        "mainIndexCenter mainIndexCenter mainIndexCenter"
+        "textBelowImage textBelowImage textBelowImage";
+    height: 100vh;
+
+    div{
+        h2{
+            text-align: center;
+        }
+        h3{
+            margin:1px;
+            text-align: center;
+        }
+    }
+
+    .mainIndexTitle{
+        grid-area: mainIndexTitle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 20%;
+    }
+
+    .mainIndexSubtitle {
+    grid-area: mainIndexSubtitle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15%;
+    }
+
+    .mainIndexCenter {
+        grid-area: mainIndexCenter;
+        text-align: center;
+        margin-bottom: 10%;
+
+        img {
+            z-index: -1;
+            border: 5px solid black;
+            border-radius: 3px;
+            background-color: black;
+            animation-name: rotateFlag;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            z-index: -1;
+            }
+
+@keyframes rotateFlag {
+    0% {z-index: -1;
+        rotate: -10deg;
+    }
+
+    50% {z-index: -1;
+        rotate: 0deg;
+    }
+    
+
+    100%{z-index: -1;
+        rotate: 10deg;
+    }
+} 
+
+}
+
+    .textBelowImage {
+    grid-area: textBelowImage;
+    border: 5px solid black;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    background-color: brown;
+    }
+
+}
+
+
+
+
+
+
+
