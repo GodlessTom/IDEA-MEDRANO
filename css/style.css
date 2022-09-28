@@ -17,9 +17,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "header header header header"
- "main main main main"
- "footer footer footer footer"; }
+  grid-template-areas: "header header header header" "main main main main" "footer footer footer footer"; }
 
 header {
   display: grid;
@@ -109,10 +107,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "mainIndexTitle mainIndexTitle mainIndexTitle"
- " mainIndexSubtitle mainIndexSubtitle mainIndexSubtitle"
- "mainIndexCenter mainIndexCenter mainIndexCenter"
- "textBelowImage textBelowImage textBelowImage";
+  grid-template-areas: "mainIndexTitle mainIndexTitle mainIndexTitle" " mainIndexSubtitle mainIndexSubtitle mainIndexSubtitle" "mainIndexCenter mainIndexCenter mainIndexCenter" "textBelowImage textBelowImage textBelowImage";
   height: 100vh; }
   #mainIndex div h2 {
     text-align: center; }
@@ -212,3 +207,368 @@ footer {
     grid-area: footerRight;
     justify-content: center;
     flex-shrink: 10px; }
+
+@media only screen and (min-width: 1200px) {
+  .slide {
+    width: 1200px; }
+  .caption {
+    font-size: 96px;
+    bottom: 96px;
+    right: 50px; } }
+
+@media only screen and (max-width: 1200px) {
+  header div h1 {
+    font-size: 18px; }
+  header div nav ul li a {
+    font-size: 20px; }
+  /* MAIN DE GALLERY */
+  .slider {
+    width: 900px; }
+  .wrapper img {
+    height: 500px;
+    width: 900px; }
+  .videosRow1-1 iframe {
+    display: flex;
+    justify-content: center;
+    width: 95%; }
+  .videosRow1-2 iframe {
+    display: flex;
+    justify-content: center;
+    width: 95%; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
+  #mainClients {
+    height: 220vh; } }
+
+@media only screen and (max-width: 1024px) {
+  /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
+  #mainGallery {
+    grid-template-columns: 0.5fr 370px 370px 0.5fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: ". galleryTitle galleryTitle ." "imageSlider imageSlider imageSlider imageSlider" "imageSlider imageSlider imageSlider imageSlider" ". videosTitle videosTitle ." ". videosRow1-1 videosRow1-2 ."; }
+  #imageSlider img {
+    width: 600px;
+    height: 400px; }
+  .slider {
+    width: 600px; }
+  .wrapper {
+    max-width: 1024px !important;
+    margin: auto; }
+  .videosRow1-1 iframe {
+    display: flex;
+    justify-content: center; }
+  .videosRow1-2 iframe {
+    display: flex;
+    justify-content: center; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
+  #mainClients {
+    height: 220vh;
+    display: grid;
+    grid-template-columns: 0.5fr 360px 0.5fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "clientsRow1 clientsRow1 clientsRow1" "clientsRow2 clientsRow2 clientsRow2" "clientsRow3 clientsRow3 clientsRow3" "clientsRow4 clientsRow4 clientsRow4" "clientsRow5 clientsRow5 clientsRow5" "clientsRow6 clientsRow6 clientsRow6" "clientsRow7 clientsRow7 clientsRow7" "clientsRow8 clientsRow8 clientsRow8"; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
+  #mainWe {
+    grid-template-areas: "weRow1 weRow1 weRow1" ". weRow2 ." "weRow3 weRow3 weRow3" ". weRow4 .";
+    height: 160vh; }
+  #mainWe div img {
+    width: 300px; }
+  #mainWeBelowImg1 {
+    margin: auto;
+    width: 80%; }
+  #mainWeBelowImg2 {
+    margin: auto;
+    width: 80%; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
+  #mainContact {
+    grid-template-columns: 1fr;
+    grid-template-areas: "mainContactForm"; } }
+
+@media only screen and (max-width: 768px) {
+  /* ACÁ MENÚ HAMBURGUESA DEL HEADER */
+  header div h1 {
+    display: flex;
+    padding-top: 3px;
+    color: black;
+    width: 60%;
+    font-size: 23px;
+    border: 5px solid black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    flex-wrap: wrap;
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-shrink: 10px;
+    font-size: 13px; }
+  header div input:checked ~ nav {
+    display: block !important; }
+  header div input:checked ~ .fa-bars {
+    display: none; }
+  header div input:not(:checked) ~ .fa-times {
+    display: none; }
+  header div nav {
+    display: none; }
+    header div nav ul li {
+      background-color: white;
+      border: 3px solid black;
+      border-radius: 3px;
+      margin-right: 10px;
+      display: block;
+      flex-wrap: wrap;
+      text-align: center;
+      z-index: 1; }
+      header div nav ul li:hover {
+        background-color: yellow; }
+      header div nav ul li a {
+        display: block;
+        max-width: 200px;
+        text-decoration: none;
+        padding: 10px 20px;
+        color: black;
+        font-size: 15px; }
+        header div nav ul li a:hover {
+          color: red; }
+  header div i {
+    opacity: 1 !important;
+    height: 48px !important;
+    width: 48px !important; }
+  header .headerLeft {
+    grid-area: headerLeft;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+  header .headerRight {
+    grid-area: headerRight;
+    display: block;
+    position: relative;
+    min-height: 48px;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 15px;
+    display: flex; }
+    header .headerRight input[type="checkbox"] {
+      opacity: 0;
+      display: block;
+      height: 48px;
+      width: 48px; }
+  .headerRight input[type="checkbox"], .headerRight .fa-bars, .headerRight .fa-times {
+    position: absolute;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-right: 20px;
+    padding: 0;
+    right: 0;
+    top: 0;
+    width: 48px;
+    height: 48px; }
+  .headerRight .fa-bars, .headerRight .fa-times {
+    font-size: 48px;
+    pointer-events: none; }
+  /* TERMINA EL MODELADO DEL MENÚ HAMBURGUESA*/
+  /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
+  #mainGallery {
+    grid-template-columns: 0.5fr 270px 270px 0.5fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: ". galleryTitle galleryTitle ." "imageSlider imageSlider imageSlider imageSlider" "imageSlider imageSlider imageSlider imageSlider"  ". videosTitle videosTitle ." ". videosRow1-1 videosRow1-2 ."; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
+  #mainClients {
+    height: 290vh; }
+  #faqList ol li {
+    margin: 0px 2rem 0px 2rem; }
+  #faqList ol p {
+    margin: 0px 4rem 0px 4rem; }
+  #mainClients div img {
+    width: 25rem; }
+  #mainClients div table {
+    max-width: 25rem; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
+  #mainWe {
+    height: 180vh; } }
+
+@media only screen and (max-width: 580px) {
+  #mainIndex {
+    height: 110vh; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
+  #mainGallery {
+    grid-template-columns: 0.5fr 230px 230px 0.5fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: ". galleryTitle galleryTitle ." "imageSlider imageSlider imageSlider imageSlider" "imageSlider imageSlider imageSlider imageSlider" ". videosTitle videosTitle ." ". videosRow1-1 videosRow1-2 ."; }
+  .wrapper img {
+    max-width: 400px;
+    height: 300px; }
+  .slider {
+    width: 400px; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
+  #mainClients {
+    height: 290vh; }
+  #mainClients div img {
+    max-width: 400px; }
+  #mainClients div table {
+    max-width: 400px;
+    margin-bottom: 10px; }
+  #faqList ol li {
+    margin: 0px 2rem 0px 2rem; }
+  #faqList ol p {
+    margin: 0px 4rem 0px 4rem; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
+  #mainWe div img {
+    margin-top: 10px;
+    width: 300px;
+    height: 80%; }
+  #mainWeBelowImg1 {
+    width: 300px; }
+  #mainWeBelowImg2 {
+    width: 300px; } }
+
+@media only screen and (max-width: 480px) {
+  /* MODIFICANDO ESTA LINEA AJUSTO CUANTO SE DESPLAZA EL MENÚ CUANDO ESTÁ ABIERTO */
+  header div h1 {
+    font-size: 12px;
+    width: 80%; }
+  header div nav ul li {
+    margin-right: 50px; }
+    header div nav ul li a {
+      font-size: 15px; }
+  header .headerRight {
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 15px; }
+  /* ACÁ CORREGÍ EL MAIN DEL INDEX */
+  #mainIndex {
+    height: 150vh; }
+    #mainIndex .textBelowImage {
+      margin: 0 50px 50px 50px; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
+  #mainGallery {
+    grid-template-columns: 0.5fr 200px 200px 0.5fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: ". galleryTitle galleryTitle ." "imageSlider imageSlider imageSlider imageSlider" "imageSlider imageSlider imageSlider imageSlider" ". videosTitle videosTitle ." ". videosRow1-1 videosRow1-2 ."; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
+  #mainClients {
+    height: 300vh; }
+  footer div {
+    height: 10vh; } }
+
+@media only screen and (max-width: 470px) {
+  header {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "headerLeft headerRight"; }
+    header div h1 {
+      font-size: 10px; }
+    header div nav ul li a {
+      font-size: 13px; }
+  /* DE ACÁ EN ADELANTE MAIN DE CLIENTES */
+  #mainClients {
+    height: 330vh; } }
+
+@media only screen and (max-width: 430px) {
+  .headerRight {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  /* ACÁ ARREGLO MAIN INDEX */
+  #mainIndex div img {
+    max-width: 280px !important; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
+  #mainGallery {
+    height: 400vh;
+    grid-template-columns: 0.2fr 280px 0.2fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: ". galleryTitle ." "imageSlider imageSlider imageSlider" "imageSlider imageSlider imageSlider" ". videosTitle ." ". videosRow1-1 ." ". videosRow1-2 ."; }
+  #mainGallery div img {
+    max-width: 280px;
+    max-height: 280px; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
+  #mainClients {
+    display: grid;
+    grid-template-columns: 0.5fr 280px 0.5fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: ". clientsRow1 ." ". clientsRow2 ." ". clientsRow3 ." ". clientsRow4 ." ". clientsRow5 ." ". clientsRow6 ." ". clientsRow7 ." "clientsRow8 clientsRow8 clientsRow8"; }
+  #faqList ol li {
+    margin: 0px 2.5rem 0px 2.5rem; }
+  #faqList ol p {
+    margin: 0px 4rem 0px 4rem; }
+  #mainClients div img {
+    max-width: 280px;
+    max-height: 280px;
+    margin: auto; }
+  #mainClients div table {
+    font-size: 12px;
+    width: 50px;
+    margin-bottom: 10px; }
+  #mainClients div h1 {
+    font-size: 25px; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
+  .formTitle {
+    font-size: 15px; }
+  footer div b {
+    font-size: 12px; } }
+
+@media only screen and (max-width: 341px) {
+  /* HEADER */
+  header div nav ul li {
+    margin-right: 60px; }
+    header div nav ul li a {
+      font-size: 10px; }
+  /* DE ACÁ EN ADELANTE EL MAIN DEL INDEX */
+  #mainIndex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "mainIndexTitle mainIndexTitle mainIndexTitle" " mainIndexSubtitle mainIndexSubtitle mainIndexSubtitle" "mainIndexCenter mainIndexCenter mainIndexCenter" "textBelowImage textBelowImage textBelowImage";
+    height: 140vh; }
+    #mainIndex .textBelowImage {
+      margin-right: 30px;
+      margin-left: 30px; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
+  #mainClients {
+    display: grid;
+    grid-template-columns: 0.5fr 280px 0.5fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: ". clientsRow1 ." ". clientsRow2 ." ". clientsRow3 ." ". clientsRow4 ." ". clientsRow5 ." ". clientsRow6 ." ". clientsRow7 ." "clientsRow8 clientsRow8 clientsRow8"; }
+  #mainClients div h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px; }
+  #mainClients div img {
+    max-height: 400px;
+    max-width: 15rem; }
+  #mainClients div table {
+    width: 10px;
+    font-size: 12px; }
+  /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
+  .formTitle {
+    font-size: 14px; }
+  #mainWe div img {
+    margin-top: 10px;
+    width: 270px;
+    height: 80%; }
+  #mainWeBelowImg1 {
+    width: 270px; }
+  #mainWeBelowImg2 {
+    width: 270px; } }
+
+@media only screen and (max-width: 320px) {
+  header div h1 {
+    margin-left: 5px;
+    margin-right: 5px; }
+  /* ACÁ ARREGLO MAIN DE INDEX */
+  #mainIndex {
+    height: 150vh; }
+  /* ACÁ ARREGLO MAIN DE GALLERY */
+  .wrapper img {
+    height: 200px;
+    width: 280px; }
+  .slider {
+    max-width: 280px; }
+  #mainGallery {
+    height: 300vh; }
+  /* CONTACTOS */
+  /* FOOTER */
+  footer div b {
+    font-size: 10px; } }
