@@ -1,0 +1,177 @@
+#mainGallery {
+    height: 260vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: ". galleryTitle galleryTitle ."
+        ". imageSlider imageSlider ."
+        ". imageSlider imageSlider ."
+        ". videosTitle videosTitle ."
+        ". videosRow1-1 videosRow1-2 .";
+    justify-content: center;
+
+    .galleryTitle{
+        grid-area: galleryTitle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        flex-basis: auto;
+        flex-shrink: 120px;
+        margin-bottom: 20px;
+
+        h1{
+            border: 5px solid black;
+            background-color: white;
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+    }
+
+/* DE ACÁ EN ADELANTE EL SLIDER */
+
+    #imageSlider {
+        grid-area: imageSlider;
+        max-width: 1200px;
+	    margin: auto;
+
+        div{
+            position: relative;
+
+            .slides {
+	            position: relative;
+	            display: flex;
+	            overflow: hidden;
+
+                li{
+                    width: 100vw;
+	                flex-shrink: 0;
+	                animation-name: slide;
+	                animation-duration: 20s;
+	                animation-iteration-count: infinite;
+	                animation-timing-function: linear;
+
+                    img{
+                        width: 100%;
+	                    vertical-align: top;
+                    }
+
+                    a {
+	                    width: 100%;
+	                    display: inline-block;
+	                    position: relative;
+
+                        p{
+                            color: white;
+	                        text-shadow: 1px 1px black;
+	                        font-size: 8vw;
+	                        position: absolute;
+	                        bottom: 8vw;
+	                        right: 4vw;
+                        }
+                    }
+
+                    &:target {
+	                    animation-name: none;
+	                    position: absolute;
+	                    left: 0;
+	                    top: 0;
+	                    right: 0;
+	                    bottom: 0;
+	                    z-index: 50;
+                    }
+                }
+
+                &:hover .slide {
+                    animation-play-state: paused;
+                }
+
+            }
+
+            .slider-controler {
+	            position: absolute;
+	            left: 0;
+	            right: 0;
+	            bottom: 0;
+	            text-align: center;
+	            padding: 5px;
+	            background-color: rgba(0,0,0,0.5);
+	            z-index: 100;
+
+                li{
+                    margin: 0 0.5rem;
+	                display: inline-block;
+	                vertical-align: top;
+                }
+
+                a{
+                    display: inline-block;
+	                vertical-align: top;
+	                text-decoration: none;
+	                color: white;
+	                font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+@keyframes slide {
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-100%); }
+
+	35% { transform: translateX(-200%); }
+	50% { transform: translateX(-200%); }
+
+	55% { transform: translateX(-300%); }
+	70% { transform: translateX(-300%); }
+
+	75% { transform: translateX(-400%); }
+	90% { transform: translateX(-400%); }
+
+	95% { transform: translateX(-500%); }
+	100% { transform: translateX(-500%); }
+}
+
+/* ACÁ TERMINA EL SLIDER DE FOTOS */
+
+    .videosTitle{
+        grid-area: videosTitle;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+
+        h2{
+            border: 5px solid black;
+            background-color: white;
+            padding-bottom: 3px;
+            padding-top: 3px;
+        }
+    }
+
+    .videosRow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+
+        iframe{
+            background-color: black;
+            border: 3px solid black;
+        }
+    }
+
+    .videosRow1-1 {
+        grid-area: videosRow1-1;
+    }
+
+    .videosRow1-2 {
+        grid-area: videosRow1-2;
+    }
+}
