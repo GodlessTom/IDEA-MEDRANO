@@ -1,0 +1,48 @@
+#mainContact {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 1fr ;
+    grid-template-areas: ". mainContactForm .";
+    height: 80vh;
+}
+
+.mainContactForm {
+    grid-area: mainContactForm;
+}
+
+#mainContact div {
+
+    font-size: larger;
+    text-align: center;
+
+}
+
+
+#mainContact div form fieldset legend {
+    font-weight: 1000;
+
+}
+
+#mainContact div form fieldset {
+    border: 5px solid black;
+}
+
+#formData1 {
+    padding-top: 15px;
+}
+
+#formData2 {
+    padding-top: 15px;
+}
+
+#formData3 {
+    padding-top: 15px;
+}
+
+#formData4 {
+    padding-top: 15px;
+}
+
+#formData5 {
+    padding-top: 15px;
+}

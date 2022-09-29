@@ -1,0 +1,106 @@
+#mainClients {
+    height: 180vh;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "clientsRow1 clientsRow1 clientsRow1"
+                        "clientsRow2 clientsRow2 clientsRow2"
+                        "clientsRow3 clientsRow3 clientsRow3"
+                        "clientsRow4 clientsRow4 clientsRow4"
+                        "clientsRow5 clientsRow5 clientsRow5"
+                        "clientsRow6 clientsRow6 clientsRow6"
+                        "clientsRow7 clientsRow7 clientsRow7"
+                        "clientsRow8 clientsRow8 clientsRow8";
+}
+
+.clientsRow1 {
+    grid-area: clientsRow1;
+}
+
+
+#mainClients div h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+
+#faqList {
+    grid-area: clientsRow2;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+
+#faqList h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#faqList h3 a {
+    border: 2px solid black;
+
+    color: red
+}
+
+#faqList ol p {
+    border: 1px dotted black;
+    background-color: white;
+    margin: 2px 4rem 2px 4rem;
+
+}
+
+#faqList ol li {
+    border: 1px solid black;
+    background-color: brown;
+    margin: 2px 2rem 2px 2rem;
+}
+
+.clientsRow3 {
+    grid-area: clientsRow3;
+}
+
+#clientsComments1 {
+    grid-area: clientsRow4;
+    text-align: center;
+}
+
+#clientsComments1 img {
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+#clientsComments2 {
+    grid-area: clientsRow5;
+    text-align: center;
+}
+
+#clientsComments2 img {
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+#clientsComments3 {
+    grid-area: clientsRow6;
+    text-align: center;
+}
+
+#clientsComments3 img {
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+.clientsRow7 {
+    grid-area: clientsRow7;
+}
+
+.clientsRow8 {
+    grid-area: clientsRow8;
+}
+
+#pricesTable {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+
+}
