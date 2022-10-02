@@ -61,6 +61,12 @@
         height: 220vh;
     }
 
+    // DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS
+
+    #mainWe{
+        height: 190vh;
+    }
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -129,7 +135,7 @@
                         ". weRow2 ."
                         "weRow3 weRow3 weRow3"
                         ". weRow4 .";
-    height: 160vh;
+    height: 190vh;
 
     div{
         img {
@@ -137,7 +143,11 @@
         }
     }
 
-    .mainWeBelowImages{
+    #mainWeBelowImg1{
+        margin: auto;
+        width: 80%;
+    }
+    #mainWeBelowImg2{
         margin: auto;
         width: 80%;
     }
@@ -329,7 +339,7 @@ header{
 /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
 
 #mainWe {
-    height: 180vh;
+    height: 190vh;
 }
 
 }
@@ -406,7 +416,10 @@ header{
             }
         }
     
-        .mainWeBelowImages {
+        #mainWeBelowImg1{
+            width:300px;
+        }
+        #mainWeBelowImg2{
             width:300px;
         }
     } 
@@ -722,7 +735,10 @@ footer{
         }
     }
 
-    .mainWeBelowImages {
+    #mainWeBelowImg1 {
+        width: 270px;
+    }
+    #mainWeBelowImg2 {
         width: 270px;
     }
 }

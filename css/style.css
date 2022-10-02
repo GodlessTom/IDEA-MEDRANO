@@ -479,7 +479,9 @@ footer {
     width: 95%; }
   /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
   #mainClients {
-    height: 220vh; } }
+    height: 220vh; }
+  #mainWe {
+    height: 190vh; } }
 
 @media only screen and (max-width: 1024px) {
   /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
@@ -508,10 +510,13 @@ footer {
   /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
   #mainWe {
     grid-template-areas: "weRow1 weRow1 weRow1" ". weRow2 ." "weRow3 weRow3 weRow3" ". weRow4 .";
-    height: 160vh; }
+    height: 190vh; }
     #mainWe div img {
       width: 300px; }
-    #mainWe .mainWeBelowImages {
+    #mainWe #mainWeBelowImg1 {
+      margin: auto;
+      width: 80%; }
+    #mainWe #mainWeBelowImg2 {
       margin: auto;
       width: 80%; }
   /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
@@ -621,7 +626,7 @@ footer {
       max-width: 25rem; }
   /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
   #mainWe {
-    height: 180vh; } }
+    height: 190vh; } }
 
 @media only screen and (max-width: 580px) {
   #mainIndex {
@@ -653,7 +658,9 @@ footer {
     margin-top: 10px;
     width: 300px;
     height: 80%; }
-  #mainWe .mainWeBelowImages {
+  #mainWe #mainWeBelowImg1 {
+    width: 300px; }
+  #mainWe #mainWeBelowImg2 {
     width: 300px; } }
 
 @media only screen and (max-width: 480px) {
@@ -781,7 +788,9 @@ footer {
     margin-top: 10px;
     width: 270px;
     height: 80%; }
-  #mainWe .mainWeBelowImages {
+  #mainWe #mainWeBelowImg1 {
+    width: 270px; }
+  #mainWe #mainWeBelowImg2 {
     width: 270px; }
   /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
   #mainContact div form fieldset legend {
