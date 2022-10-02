@@ -1,5 +1,5 @@
 
-// ESTE MEDIA QUERY ES DEL CARROUSEL
+// ESTE MEDIA QUERY ES DEL SLIDER
 @media only screen and (min-width: 1200px) {
 	.slide {
 		width: 1200px;
@@ -35,7 +35,7 @@
 
     /* MAIN DE GALLERY */
 
-
+// PARTE DEL SLIDER
 
     .slider {
         width: 900px;
@@ -46,29 +46,20 @@
         width: 900px;
     }
 
-    
+// TERMINA PARTE DEL SLIDER
 
-    .videosRow1-1 iframe {
-        display: flex;
-        justify-content: center;
-        width: 95%;
-
+    .videosRow{
+        iframe{
+            display: flex;
+            justify-content: center;
+            width: 95%;} 
     }
-
-    .videosRow1-2 iframe {
-        display: flex;
-        justify-content: center;
-        width: 95%;
-    }
-
 
     /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
 
     #mainClients {
         height: 220vh;
     }
-
-
 
 }
 
@@ -77,7 +68,6 @@
     /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
 
     #mainGallery {
-
         grid-template-columns: 0.5fr 370px 370px 0.5fr;
         grid-template-rows: repeat(5, 1fr);
         grid-template-areas: ". galleryTitle galleryTitle ."
@@ -85,8 +75,12 @@
             "imageSlider imageSlider imageSlider imageSlider"
             ". videosTitle videosTitle ."
             ". videosRow1-1 videosRow1-2 .";
+
+    
+    
     }
 
+// ESTO PERTENECE AL SLIDER
     #imageSlider img {
         width: 600px;
         height: 400px;
@@ -101,19 +95,14 @@
         max-width: 1024px !important;
         margin: auto;
     }
+// ACÁ TERMINA EL SLIDER
 
-
-    .videosRow1-1 iframe {
-        display: flex;
-        justify-content: center;
-
+    .videosRow{
+        iframe{
+            display: flex;
+            justify-content: center;
+        }
     }
-
-    .videosRow1-2 iframe {
-        display: flex;
-        justify-content: center;
-    }
-
 
     /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
 
@@ -141,31 +130,24 @@
                         "weRow3 weRow3 weRow3"
                         ". weRow4 .";
     height: 160vh;
+
+    div{
+        img {
+            width: 300px;
+        }
+    }
+
+    .mainWeBelowImages{
+        margin: auto;
+        width: 80%;
+    }
 }
-
-#mainWe div img {
-    width: 300px;
-}
-
-#mainWeBelowImg1 {
-    margin: auto;
-    width: 80%;
-
-}
-
-#mainWeBelowImg2 {
-    margin: auto;
-    width: 80%;
-}
-
 
 /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
 
     #mainContact {grid-template-columns:  1fr ;
         grid-template-areas: "mainContactForm";
     }
-
-
 
 }
 
@@ -322,22 +304,26 @@ header{
 
 #mainClients {
     height: 290vh;
-}
 
-#faqList ol li {
-    margin: 0px 2rem 0px 2rem;
-}
+    div{
+        ol{
+            li{
+                margin: 0px 2rem 0px 2rem;
+            }
 
-#faqList ol p{
-    margin: 0px 4rem 0px 4rem;
-}
+            p{
+                margin: 0px 4rem 0px 4rem;
+            }
+        }
+        
+        img{
+            width: 25rem;
+        }
 
-#mainClients div img {
-    width: 25rem;
-}
-
-#mainClients div table {
-    max-width: 25rem;
+        table {
+            max-width: 25rem;
+        }
+    }
 }
 
 /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
@@ -346,15 +332,9 @@ header{
     height: 180vh;
 }
 
-
 }
 
 @media only screen and (max-width: 580px) {
-
-
-
-
-
 
     #mainIndex {
         height: 110vh;
@@ -373,6 +353,7 @@ header{
             ". videosRow1-1 videosRow1-2 .";
     }
 
+    // ESTA PARTE PERTENECE AL SLIDER
     .wrapper img {
         max-width: 400px;
         height: 300px;
@@ -382,7 +363,7 @@ header{
         width: 400px;
     }
     
-    
+    // ACÁ TERMINA EL SLIDER
     
 
 
@@ -390,49 +371,47 @@ header{
 
     #mainClients {
         height: 290vh;
-    }
 
-    #mainClients div img {
-        max-width: 400px;
-    }
-    
-    #mainClients div table {
-        max-width: 400px;
-        margin-bottom: 10px;
-    }
+        div{
+            
+            ol{
+                li{
+                    margin: 0px 2rem 0px 2rem;
+                }
 
-    #faqList ol li {
-        margin: 0px 2rem 0px 2rem;
-    }
-    
-    #faqList ol p{
-        margin: 0px 4rem 0px 4rem;
-    }
+                p{
+                    margin: 0px 4rem 0px 4rem;
+                }
+            }
+            img{
+                max-width: 400px;
+            }
 
+            table{
+                max-width: 400px;
+                margin-bottom: 10px;
+            }
+
+        }
+    }
 
     /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
 
-    #mainWe div img{
-        margin-top: 10px;
-        width: 300px;
-        height: 80%;
-    }
-
-    #mainWeBelowImg1 {
-        width:300px;
-    }
-
-    #mainWeBelowImg2 {
-        width: 300px;
-    }
-
-
-
+    #mainWe{
+        div{
+            img{
+                margin-top: 10px;
+                width: 300px;
+                height: 80%;
+            }
+        }
+    
+        .mainWeBelowImages {
+            width:300px;
+        }
+    } 
 
 }
-
-
-
 
 
 @media only screen and (max-width: 480px) {
@@ -443,7 +422,7 @@ header{
     div{
         h1{
             font-size: 12px;
-        width: 80%;
+            width: 80%;
         }
         nav{
             ul{
@@ -488,10 +467,6 @@ header{
             ". videosTitle videosTitle ."
             ". videosRow1-1 videosRow1-2 .";
     }
-    
-    
-    
-
 
     /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
 
@@ -499,12 +474,13 @@ header{
         height: 300vh;
     }
 
+// ARREGLO MAIN DE CONTACTO
 
-
-
+#mainContact{
+    height: 90vh;
+}
 
 // ACÁ AJUSTO FOOTER
-
 
 footer {
     div{
@@ -515,7 +491,6 @@ footer {
 }
 
 @media only screen and (max-width: 470px) {
-
 
     header {
         display: grid;
@@ -552,7 +527,6 @@ footer {
 
 @media only screen and (max-width: 430px)  {
 
-
     .headerRight {
         display: flex;
         justify-content: center;
@@ -568,8 +542,6 @@ footer {
             }
         }
     }
-    
-
 
     /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
     #mainGallery {
@@ -582,11 +554,13 @@ footer {
             ". videosTitle ."
             ". videosRow1-1 ."
             ". videosRow1-2 .";
-    }
 
-    #mainGallery div img {
-        max-width: 280px;
-        max-height: 280px;
+        div{
+            img{
+                max-width: 280px;
+                max-height: 280px;
+            }
+        }
     }
 
 
@@ -604,40 +578,49 @@ footer {
                             ". clientsRow6 ."
                             ". clientsRow7 ."
                             "clientsRow8 clientsRow8 clientsRow8"; 
-    }
 
+        div{
+            ol{
+                li{
+                    margin: 0px 2.5rem 0px 2.5rem;
+                }
+                p{
+                    margin: 0px 4rem 0px 4rem;
+                }
+            }
 
-    #faqList ol li {
-        margin: 0px 2.5rem 0px 2.5rem;
-    }
-    
-    #faqList ol p{
-        margin: 0px 4rem 0px 4rem;
-    }
+            img{
+                max-width: 280px;
+                max-height: 280px;
+                margin: auto;
+            }
 
-    #mainClients div img {
-        max-width: 280px;
-        max-height: 280px;
-        margin: auto;
-    }
-    
-    #mainClients div table {
-        font-size: 12px;
-        width: 50px;
-        margin-bottom: 10px;
-    }
+            table{
+                font-size: 12px;
+                width: 50px;
+                margin-bottom: 10px;
+            }
 
-    #mainClients div h1 {
-        font-size: 25px;
+            h2{
+                font-size: 25px;
+            }
+        }
     }
-
 
 
     /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
 
-    .formTitle {
-        font-size: 15px;
+#mainContact{
+    div{
+        form{
+            fieldset{
+                legend{
+                    font-size: 15px;
+                }
+            }
+        }
     }
+}
 
 // DE ACÁ EN ADELANTE FOOTER
 
@@ -649,13 +632,7 @@ footer{
     }
 }
 
-
 }
-
-
-
-
-
 
 @media only screen and (max-width: 341px) {
 
@@ -714,52 +691,57 @@ footer{
                             ". clientsRow7 ."
                             "clientsRow8 clientsRow8 clientsRow8";
     
+        div{
+            h1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 25px;
+            }
 
+            img{
+                max-height: 400px;
+                max-width: 15rem;
+            }
+
+            table{
+                width: 10px;
+                font-size: 12px;
+            }
+        }
     }
 
-    #mainClients div h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 25px;
+    // DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS
+
+#mainWe{
+    div{
+        img{
+            margin-top: 10px;
+            width: 270px;
+            height: 80%;
+        }
     }
 
-
-#mainClients div img {
-    max-height: 400px;
-    max-width: 15rem;
-}
-
-#mainClients div table {
-    width: 10px;
-    font-size: 12px;
+    .mainWeBelowImages {
+        width: 270px;
+    }
 }
 
 /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
 
-.formTitle {
-    font-size: 14px;
+#mainContact{
+    div{
+        form{
+            fieldset{
+                legend{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 
-#mainWe div img{
-    margin-top: 10px;
-    width: 270px;
-    height: 80%;
 }
-
-#mainWeBelowImg1 {
-    width:270px;
-}
-
-#mainWeBelowImg2 {
-    width: 270px;
-}
-
-
-
-}
-
-
 
 
 @media only screen and (max-width: 320px) {
@@ -782,23 +764,27 @@ footer{
 
     /* ACÁ ARREGLO MAIN DE GALLERY */
 
-    .wrapper img {
+#mainGallery {
+        height: 300vh;
+    }
+
+    // ACÁ VAN CORRECIONES DEL SLIDER
+.wrapper img {
         
         height: 200px;
         width: 280px;
     }
-    .slider {
+.slider {
         max-width: 280px;
     }
-    
 
-    #mainGallery {
-        height: 300vh;
-    }
+// TERMINAN CORRECCIONES DEL SLIDER
 
-    /* CONTACTOS */
+// CORRECIONES DE CONTACTO
 
-
+#mainContact{
+    height: 90vh;
+}
 
     /* FOOTER */
 

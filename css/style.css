@@ -473,11 +473,7 @@ footer {
   .wrapper img {
     height: 500px;
     width: 900px; }
-  .videosRow1-1 iframe {
-    display: flex;
-    justify-content: center;
-    width: 95%; }
-  .videosRow1-2 iframe {
+  .videosRow iframe {
     display: flex;
     justify-content: center;
     width: 95%; }
@@ -499,10 +495,7 @@ footer {
   .wrapper {
     max-width: 1024px !important;
     margin: auto; }
-  .videosRow1-1 iframe {
-    display: flex;
-    justify-content: center; }
-  .videosRow1-2 iframe {
+  .videosRow iframe {
     display: flex;
     justify-content: center; }
   /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
@@ -516,14 +509,11 @@ footer {
   #mainWe {
     grid-template-areas: "weRow1 weRow1 weRow1" ". weRow2 ." "weRow3 weRow3 weRow3" ". weRow4 .";
     height: 160vh; }
-  #mainWe div img {
-    width: 300px; }
-  #mainWeBelowImg1 {
-    margin: auto;
-    width: 80%; }
-  #mainWeBelowImg2 {
-    margin: auto;
-    width: 80%; }
+    #mainWe div img {
+      width: 300px; }
+    #mainWe .mainWeBelowImages {
+      margin: auto;
+      width: 80%; }
   /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
   #mainContact {
     grid-template-columns: 1fr;
@@ -621,14 +611,14 @@ footer {
   /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
   #mainClients {
     height: 290vh; }
-  #faqList ol li {
-    margin: 0px 2rem 0px 2rem; }
-  #faqList ol p {
-    margin: 0px 4rem 0px 4rem; }
-  #mainClients div img {
-    width: 25rem; }
-  #mainClients div table {
-    max-width: 25rem; }
+    #mainClients div ol li {
+      margin: 0px 2rem 0px 2rem; }
+    #mainClients div ol p {
+      margin: 0px 4rem 0px 4rem; }
+    #mainClients div img {
+      width: 25rem; }
+    #mainClients div table {
+      max-width: 25rem; }
   /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
   #mainWe {
     height: 180vh; } }
@@ -649,23 +639,21 @@ footer {
   /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
   #mainClients {
     height: 290vh; }
-  #mainClients div img {
-    max-width: 400px; }
-  #mainClients div table {
-    max-width: 400px;
-    margin-bottom: 10px; }
-  #faqList ol li {
-    margin: 0px 2rem 0px 2rem; }
-  #faqList ol p {
-    margin: 0px 4rem 0px 4rem; }
+    #mainClients div ol li {
+      margin: 0px 2rem 0px 2rem; }
+    #mainClients div ol p {
+      margin: 0px 4rem 0px 4rem; }
+    #mainClients div img {
+      max-width: 400px; }
+    #mainClients div table {
+      max-width: 400px;
+      margin-bottom: 10px; }
   /* DE ACÁ EN ADELANTE EL MAIN DE NOSOTROS */
   #mainWe div img {
     margin-top: 10px;
     width: 300px;
     height: 80%; }
-  #mainWeBelowImg1 {
-    width: 300px; }
-  #mainWeBelowImg2 {
+  #mainWe .mainWeBelowImages {
     width: 300px; } }
 
 @media only screen and (max-width: 480px) {
@@ -694,6 +682,8 @@ footer {
   /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
   #mainClients {
     height: 300vh; }
+  #mainContact {
+    height: 90vh; }
   footer div {
     height: 10vh; } }
 
@@ -725,31 +715,31 @@ footer {
     grid-template-columns: 0.2fr 280px 0.2fr;
     grid-template-rows: repeat(6, 1fr);
     grid-template-areas: ". galleryTitle ." "imageSlider imageSlider imageSlider" "imageSlider imageSlider imageSlider" ". videosTitle ." ". videosRow1-1 ." ". videosRow1-2 ."; }
-  #mainGallery div img {
-    max-width: 280px;
-    max-height: 280px; }
+    #mainGallery div img {
+      max-width: 280px;
+      max-height: 280px; }
   /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
   #mainClients {
     display: grid;
     grid-template-columns: 0.5fr 280px 0.5fr;
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: ". clientsRow1 ." ". clientsRow2 ." ". clientsRow3 ." ". clientsRow4 ." ". clientsRow5 ." ". clientsRow6 ." ". clientsRow7 ." "clientsRow8 clientsRow8 clientsRow8"; }
-  #faqList ol li {
-    margin: 0px 2.5rem 0px 2.5rem; }
-  #faqList ol p {
-    margin: 0px 4rem 0px 4rem; }
-  #mainClients div img {
-    max-width: 280px;
-    max-height: 280px;
-    margin: auto; }
-  #mainClients div table {
-    font-size: 12px;
-    width: 50px;
-    margin-bottom: 10px; }
-  #mainClients div h1 {
-    font-size: 25px; }
+    #mainClients div ol li {
+      margin: 0px 2.5rem 0px 2.5rem; }
+    #mainClients div ol p {
+      margin: 0px 4rem 0px 4rem; }
+    #mainClients div img {
+      max-width: 280px;
+      max-height: 280px;
+      margin: auto; }
+    #mainClients div table {
+      font-size: 12px;
+      width: 50px;
+      margin-bottom: 10px; }
+    #mainClients div h2 {
+      font-size: 25px; }
   /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
-  .formTitle {
+  #mainContact div form fieldset legend {
     font-size: 15px; }
   footer div b {
     font-size: 12px; } }
@@ -776,28 +766,26 @@ footer {
     grid-template-columns: 0.5fr 280px 0.5fr;
     grid-template-rows: repeat(8, 1fr);
     grid-template-areas: ". clientsRow1 ." ". clientsRow2 ." ". clientsRow3 ." ". clientsRow4 ." ". clientsRow5 ." ". clientsRow6 ." ". clientsRow7 ." "clientsRow8 clientsRow8 clientsRow8"; }
-  #mainClients div h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px; }
-  #mainClients div img {
-    max-height: 400px;
-    max-width: 15rem; }
-  #mainClients div table {
-    width: 10px;
-    font-size: 12px; }
-  /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
-  .formTitle {
-    font-size: 14px; }
+    #mainClients div h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px; }
+    #mainClients div img {
+      max-height: 400px;
+      max-width: 15rem; }
+    #mainClients div table {
+      width: 10px;
+      font-size: 12px; }
   #mainWe div img {
     margin-top: 10px;
     width: 270px;
     height: 80%; }
-  #mainWeBelowImg1 {
+  #mainWe .mainWeBelowImages {
     width: 270px; }
-  #mainWeBelowImg2 {
-    width: 270px; } }
+  /* DE ACÁ EN ADELANTE EL MAIN DE CONTACTO */
+  #mainContact div form fieldset legend {
+    font-size: 14px; } }
 
 @media only screen and (max-width: 320px) {
   header div h1 {
@@ -807,14 +795,15 @@ footer {
   #mainIndex {
     height: 150vh; }
   /* ACÁ ARREGLO MAIN DE GALLERY */
+  #mainGallery {
+    height: 300vh; }
   .wrapper img {
     height: 200px;
     width: 280px; }
   .slider {
     max-width: 280px; }
-  #mainGallery {
-    height: 300vh; }
-  /* CONTACTOS */
+  #mainContact {
+    height: 90vh; }
   /* FOOTER */
   footer div b {
     font-size: 10px; } }
