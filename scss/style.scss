@@ -1,15 +1,16 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 @font-face {
     font-family: "Leatherwork";
     src: url(../assets/fonts/leatherwork/Leatherwork-Regular.ttf);
 }
 
+@import "./mixins";
 
+*{
+    @include reset
+}
+
+@import "./variables";
 @import "./body";
 @import "./header";
 @import "./main";
@@ -19,3 +20,4 @@
 @import "./mainContactos";
 @import "./footer";
 @import "./mediaqueries";
+

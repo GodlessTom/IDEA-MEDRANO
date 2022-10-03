@@ -1,12 +1,12 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Leatherwork";
+  src: url(../assets/fonts/leatherwork/Leatherwork-Regular.ttf); }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
-
-@font-face {
-  font-family: "Leatherwork";
-  src: url(../assets/fonts/leatherwork/Leatherwork-Regular.ttf); }
 
 body {
   font-family: 'Leatherwork';
@@ -120,20 +120,22 @@ main {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 20%; }
+    height: 20%;
+    z-index: 1; }
   #mainIndex .mainIndexSubtitle {
     grid-area: mainIndexSubtitle;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 15%; }
+    height: 15%;
+    z-index: 1; }
   #mainIndex .mainIndexCenter {
     grid-area: mainIndexCenter;
     text-align: center;
     margin-bottom: 10%; }
     #mainIndex .mainIndexCenter img {
-      z-index: -1;
+      margin-top: 20px;
       border: 5px solid black;
       border-radius: 3px;
       background-color: black;
@@ -374,7 +376,7 @@ main {
     background-color: brown;
     width: 600px;
     margin: auto;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     padding-top: 5px;
     padding-bottom: 5px; }
   #mainWe .weRow3 {
@@ -385,7 +387,7 @@ main {
     background-color: brown;
     width: 900px;
     margin: auto;
-    margin-bottom: 10px;
+    margin-top: 30px;
     padding-top: 5px;
     padding-bottom: 5px; }
 
