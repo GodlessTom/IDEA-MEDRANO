@@ -15,13 +15,13 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: brown;
+    background-color: map-get($paleta-colores, "rojo-federal" );
     
     div {
         h1{
             display: flex;
             padding-top: 3px;
-            color: black;
+            color: map-get($paleta-colores, "negro" );
             width: 60%;
             font-size: 23px;
             border: 5px solid black;
@@ -35,7 +35,7 @@ header {
         nav{
             ul{
                 li{
-                    background-color: white;
+                    background-color: map-get($paleta-colores, "blanco" );
                     border: 3px solid black;
                     border-radius: 3px;
                     display: inline-block;
@@ -43,7 +43,7 @@ header {
                     text-align: center;
 
                     &:hover{
-                        background-color: yellow;
+                        background-color: map-get($paleta-colores, "boton" );
                     }
                     a{
                         display: block;
@@ -53,7 +53,7 @@ header {
                         color: black;
 
                         &:hover{
-                            color: red;
+                            color: map-get($paleta-colores, "letra-boton" );
                         }
                     }
                 }

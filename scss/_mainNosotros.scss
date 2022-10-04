@@ -12,7 +12,7 @@
 
     div{
         img{
-            background-color: black;
+            background-color: map-get($paleta-colores, "negro" );
             border: 3px solid black;
         }
     }
@@ -32,7 +32,7 @@
         padding-top: 5px;
         padding-bottom: 5px;
         border: 2px solid black;
-        background-color: brown;
+        background-color: map-get($paleta-colores, "rojo-federal" );
     }
 
     .weRow3 {

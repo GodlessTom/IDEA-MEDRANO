@@ -11,7 +11,7 @@ footer {
     position: relative;
     width: 100vw;
     height: 13vh;
-    background-color: brown;
+    background-color: map-get($paleta-colores, "rojo-federal" );
 
     div{
         position: relative;
