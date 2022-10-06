@@ -12,13 +12,13 @@
     "type": "git",
     "url": "git+https://github.com/GodlessTom/IDEA-MEDRANO.git"
   },
-  "author": "",
+  "author": "Tomás Ariel Medrano",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/GodlessTom/IDEA-MEDRANO/issues"
   },
   "homepage": "https://github.com/GodlessTom/IDEA-MEDRANO#readme",
-  "description": "",
+  "description": "Proyecto de página de contacto e información de una tienda local de artículos regionales artesanales.",
   "devDependencies": {
     "node-sass": "^7.0.3",
     "nodemon": "^2.0.20"
