@@ -9,7 +9,7 @@ main {
     padding-top: 50px;
     width: 100vw;
     height: 120vh;
-    background-image: url(../assets/images/FondoGaucho.jpg);
+    background-image: url(../assets/images/FondoGaucho.webp);
     background-size: cover;
     z-index: -1;
 }
@@ -96,7 +96,7 @@ main {
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 100px;
-    background-color: map-get($paleta-colores, "negro" );
+    background-color: map-get($paleta-colores, "rojo-federal" );
     }
 
 }
