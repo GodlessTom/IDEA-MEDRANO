@@ -11,6 +11,7 @@
         ". videosRow1-1 videosRow1-2 .";
     justify-content: center;
 
+
     .galleryTitle{
         grid-area: galleryTitle;
         display: flex;
@@ -35,6 +36,8 @@
     #imageSlider {
         grid-area: imageSlider;
         max-width: 1200px;
+        height: 600px;
+        width: 600px;
 	    margin: auto;
 }
 
