@@ -284,7 +284,7 @@ main {
   grid-template-areas: "weRow1 weRow1 weRow1" "weRow2 weRow2 weRow2" "weRow3 weRow3 weRow3" "weRow4 weRow4 weRow4";
   text-align: center;
   width: 100vw;
-  height: 145vh; }
+  height: 160vh; }
   #mainWe div img {
     background-color: black;
     border: 3px solid black; }
