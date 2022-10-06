@@ -591,7 +591,14 @@ footer {
   #mainGallery {
     grid-template-columns: 0.5fr 200px 200px 0.5fr;
     grid-template-rows: repeat(5, 1fr);
-    grid-template-areas: ". galleryTitle galleryTitle ." "imageSlider imageSlider imageSlider imageSlider" "imageSlider imageSlider imageSlider imageSlider" ". videosTitle videosTitle ." ". videosRow1-1 videosRow1-2 ."; }
+    grid-template-areas: ". galleryTitle galleryTitle ." "imageSlider imageSlider imageSlider imageSlider" "imageSlider imageSlider imageSlider imageSlider" ". videosTitle videosTitle ." ". videosRow1-1 videosRow1-2 .";
+    height: 160vh; }
+    #mainGallery #imageSlider {
+      height: 280px !important;
+      width: 280px !important; }
+      #mainGallery #imageSlider div div img {
+        height: 280px !important;
+        width: 280px !important; }
   /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
   #mainClients {
     height: 300vh; }
@@ -627,7 +634,8 @@ footer {
     height: 400vh;
     grid-template-columns: 0.2fr 280px 0.2fr;
     grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: ". galleryTitle ." "imageSlider imageSlider imageSlider" "imageSlider imageSlider imageSlider" ". videosTitle ." ". videosRow1-1 ." ". videosRow1-2 ."; }
+    grid-template-areas: ". galleryTitle ." "imageSlider imageSlider imageSlider" "imageSlider imageSlider imageSlider" ". videosTitle ." ". videosRow1-1 ." ". videosRow1-2 .";
+    height: 225vh; }
     #mainGallery div img {
       max-width: 280px;
       max-height: 280px; }
@@ -711,12 +719,7 @@ footer {
     height: 150vh; }
   /* ACÁ ARREGLO MAIN DE GALLERY */
   #mainGallery {
-    height: 300vh; }
-  .wrapper img {
-    height: 200px;
-    width: 280px; }
-  .slider {
-    max-width: 280px; }
+    height: 250vh; }
   #mainContact {
     height: 90vh; }
   /* FOOTER */

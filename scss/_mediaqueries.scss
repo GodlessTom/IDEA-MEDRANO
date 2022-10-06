@@ -460,6 +460,21 @@ header{
             "imageSlider imageSlider imageSlider imageSlider"
             ". videosTitle videosTitle ."
             ". videosRow1-1 videosRow1-2 .";
+        height: 160vh;
+
+            #imageSlider{
+                height: 280px !important;
+                width: 280px !important;
+
+                div{
+                    div{
+                        img{
+                            height: 280px !important;
+                            width: 280px !important;
+                        }
+                    }
+                }
+            }
     }
 
     /* DE ACÁ EN ADELANTE EL MAIN DE CLIENTES */
@@ -548,6 +563,7 @@ footer {
             ". videosTitle ."
             ". videosRow1-1 ."
             ". videosRow1-2 .";
+            height: 225vh;
 
         div{
             img{
@@ -762,20 +778,9 @@ footer{
     /* ACÁ ARREGLO MAIN DE GALLERY */
 
 #mainGallery {
-        height: 300vh;
+        height: 250vh;
     }
 
-    // ACÁ VAN CORRECIONES DEL SLIDER
-.wrapper img {
-        
-        height: 200px;
-        width: 280px;
-    }
-.slider {
-        max-width: 280px;
-    }
-
-// TERMINAN CORRECCIONES DEL SLIDER
 
 // CORRECIONES DE CONTACTO
 
