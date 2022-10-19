@@ -67,7 +67,7 @@ header {
       header div nav ul li a {
         display: block;
         max-width: 200px !important;
-        font-size: 22px !important;
+        font-size: 22px;
         text-decoration: none;
         color: black; }
         header div nav ul li a:hover {
@@ -396,6 +396,8 @@ footer {
     height: 190vh; } }
 
 @media only screen and (max-width: 1024px) {
+  header div nav ul li a {
+    font-size: 19px !important; }
   /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
   #mainGallery {
     grid-template-columns: 0.5fr 370px 370px 0.5fr;
@@ -478,7 +480,7 @@ footer {
         header div nav ul li a:hover {
           color: red; }
   header div i {
-    margin-top: 14px !important;
+    margin-top: 8px !important;
     opacity: 1 !important;
     height: 48px !important;
     width: 48px !important; }
@@ -543,6 +545,10 @@ footer {
     height: 190vh; } }
 
 @media only screen and (max-width: 580px) {
+  header div nav ul li {
+    margin-right: 40px !important; }
+    header div nav ul li a {
+      font-size: 16px !important; }
   #mainIndex {
     height: 110vh; }
   /* DE ACÁ EN ADELANTE EL MAIN DE GALLERY */
@@ -579,14 +585,14 @@ footer {
     width: 300px; } }
 
 @media only screen and (max-width: 480px) {
-  /* MODIFICANDO ESTA LINEA AJUSTO CUANTO SE DESPLAZA EL MENÚ CUANDO ESTÁ ABIERTO */
   header div h1 {
     font-size: 12px;
     width: 80%; }
   header div nav ul li {
-    margin-right: 50px; }
+    margin-right: 50px;
+    /* MODIFICANDO ESTA LINEA AJUSTO CUANTO SE DESPLAZA EL MENÚ CUANDO ESTÁ ABIERTO */ }
     header div nav ul li a {
-      font-size: 15px; }
+      font-size: 15px !important; }
   header .headerRight {
     width: 100%;
     padding-right: 10px;
@@ -624,8 +630,10 @@ footer {
     grid-template-areas: "headerLeft headerRight"; }
     header div h1 {
       font-size: 10px; }
-    header div nav ul li a {
-      font-size: 13px; }
+    header div nav ul li {
+      margin-right: 25px !important; }
+      header div nav ul li a {
+        font-size: 13px !important; }
   /* DE ACÁ EN ADELANTE MAIN DE CLIENTES */
   #mainClients {
     height: 330vh; } }
@@ -677,9 +685,9 @@ footer {
 @media only screen and (max-width: 341px) {
   /* HEADER */
   header div nav ul li {
-    margin-right: 60px; }
+    margin-right: 60px !important; }
     header div nav ul li a {
-      font-size: 10px; }
+      font-size: 10px !important; }
   /* DE ACÁ EN ADELANTE EL MAIN DEL INDEX */
   #mainIndex {
     display: grid;
