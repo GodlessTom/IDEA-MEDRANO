@@ -48,24 +48,29 @@ header {
     justify-content: center;
     align-items: center;
     background-color: white;
-    flex-wrap: wrap; }
-  header div nav ul li {
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 3px;
-    display: inline-block;
     flex-wrap: wrap;
-    text-align: center; }
-    header div nav ul li:hover {
-      background-color: yellow; }
-    header div nav ul li a {
-      display: block;
-      max-width: 200px;
-      font-size: 25px;
-      text-decoration: none;
-      color: black; }
-      header div nav ul li a:hover {
-        color: red; }
+    font-weight: bolder !important; }
+  header div nav ul {
+    padding-left: 0 !important;
+    margin-bottom: 0 !important;
+    line-height: 1.5 !important; }
+    header div nav ul li {
+      background-color: white;
+      border: 3px solid black;
+      border-radius: 3px;
+      display: inline-block;
+      flex-wrap: wrap;
+      text-align: center; }
+      header div nav ul li:hover {
+        background-color: yellow; }
+      header div nav ul li a {
+        display: block;
+        max-width: 200px !important;
+        font-size: 25px;
+        text-decoration: none;
+        color: black; }
+        header div nav ul li a:hover {
+          color: red; }
 
 .headerLeft {
   grid-area: headerLeft;
@@ -76,10 +81,10 @@ header {
 
 .headerRight {
   grid-area: headerRight;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important; }
   .headerRight input[type="checkbox"] {
     display: none; }
   .headerRight i {
@@ -171,6 +176,7 @@ main {
   grid-template-rows: repeat(5, 1fr);
   grid-template-areas: ". galleryTitle galleryTitle ." ". imageSlider imageSlider ." ". imageSlider imageSlider ." ". videosTitle videosTitle ." ". videosRow1-1 videosRow1-2 .";
   justify-content: center;
+  overflow-x: hidden !important;
   /* DE ACÁ EN ADELANTE EL SLIDER */
   /* ACÁ TERMINA EL SLIDER DE FOTOS */ }
   #mainGallery .galleryTitle {
@@ -187,7 +193,8 @@ main {
       border: 5px solid black;
       background-color: white;
       padding-top: 3px;
-      padding-bottom: 3px; }
+      padding-bottom: 3px;
+      font-weight: bold !important; }
   #mainGallery #imageSlider {
     grid-area: imageSlider;
     max-width: 1200px;

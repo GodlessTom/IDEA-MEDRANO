@@ -10,6 +10,7 @@
         ". videosTitle videosTitle ."
         ". videosRow1-1 videosRow1-2 .";
     justify-content: center;
+    overflow-x: hidden !important;
 
 
     .galleryTitle{
@@ -28,6 +29,7 @@
             background-color: white;
             padding-top: 3px;
             padding-bottom: 3px;
+            font-weight: bold !important;
         }
     }
 
@@ -39,6 +41,7 @@
         height: 600px;
         width: 600px;
 	    margin: auto;
+        
 }
 
 /* ACÁ TERMINA EL SLIDER DE FOTOS */
